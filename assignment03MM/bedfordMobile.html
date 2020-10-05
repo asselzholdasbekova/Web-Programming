@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Bedford</title>
+
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            header{
+                background-image: url(bedford.jpeg);
+                background-size: cover;
+                height: 300px;
+                position: relative;
+                width: 100%;
+            }
+            #overlay{
+                background-color: rgb(0,0,0,0.3);
+                position: relative;
+                bottom: 0px;
+                left: 0px;
+                height: 100%;
+                width: 100%;
+            }
+
+            nav{
+                display: flex;
+                justify-content: space-between;
+            }
+            .forFonts{
+                text-decoration: none;
+                color: white;
+                margin: 10px;
+            }
+            #takeAction{
+                width: 146px;
+                height: 42.67px;
+                text-decoration: none;
+                color: white;
+                padding: 13px 19.5px;
+                margin: 0px 0px 0px 13px;
+                border: 2px solid white;
+                border-radius: 15px;
+            }
+            #headerContent{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            article{
+                margin: 0px 10%;
+            }
+            #div1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 360px;
+            }
+            #div2{
+                display: flex;
+            }
+            #div3{
+                display: flex;
+            }
+
+            #prefooter{
+                width: 100%;
+                height: 300px;
+            }
+            footer{
+                width: 100%;
+                height: 200px;
+                background-color: #262626;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media screen and (max-width: 675px){
+                #navBar{
+                    display: none;
+                }
+                article{
+                    margin: 0px;
+                }
+            }
+            @media screen and (max-width: 455px){
+                #div2, #div3 {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            
+            <nav>
+                <img src="bedford-foundation.png" width="140px" height="60.57px"/>
+                <span style="margin-top: 18px;" id="navBar">
+                    <a href="" class="forFonts">Home</a>
+                    <a href="" class="forFonts">About</a>
+                    <a href="" class="forFonts">News</a>
+                    <a href="" class="forFonts">Read me</a>
+                    <a href="" id="takeAction">Take action</a>
+                </span>
+            </nav>
+    
+            <div id="headerContent">
+                <p style="font-size: 24px; color: white;"><i>Sustainability</i></p>
+                <strong style="color: white; font-size: 68px;" >STARTS WITH YOU</strong>
+                <a style=" width: 156px; height: 41px;
+                background-color:#27AA9F; color: white; 
+                border-radius: 15px; display: flex; justify-content: center;
+                align-items: center;">LEARN MORE</a>
+            </div> 
+        </header>
+
+        <article>
+            <div id="div1">
+                <h1>
+                    We conserve land through outreach, restoration, and research.
+                </h1>
+
+                <p>
+                    Some of the Earth's greatest landscapes are threatened by 
+                    increased road construction, oil and gas exploration, and mining.
+                     We aim to protect these areas from inappropriate development, 
+                     but we cannot achieve our goals alone. Find out how you can help.
+                </p>
+
+                <em>
+                    All photography provided by 
+                    <i>Jared Chambers</i>
+                </em>
+            </div>
+
+            <div id="div2">
+                <img  src="bedford2.png" width="50%" height="auto" >
+                <span style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center; width: 50%;">
+                    <p style="font: 14px proxima-nova; color: #BDBDBD;">ABOUT</p>
+                    <p style="font: 23px adobe-garamond-pro;">Find out about our organization,mission, our methods, 
+                    and the results of our decades of advocacy.</p>
+                    <a style=" width: 156px; height: 41px;
+                    background-color:#27AA9F; color: white; border-radius: 15px; 
+                    display: flex; align-items: center; justify-content: center;">LEARN MORE</a>
+                </span>
+            </div>
+
+            <div id="div3">
+                <span style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center; width: 50%;">
+                    <p style="font: 14px proxima-nova; color: #BDBDBD; ">TAKE ACTION</p>
+                    <p style="font: 23px adobe-garamond-pro;">Ready to take the next step? 
+                        You can become a contributor to our cause, or participate yourself..</p>
+                    <a style="width: 156px; height: 41px;
+                    background-color:#27AA9F; color: white; border-radius: 15px; 
+                    display: flex; justify-content: center; align-items: center;">FIND OUT HOW</a>
+                </span>
+                <img src="bedford3.png" width="50%" height="auto">
+            </div>
+        </article>
+
+        <div id="prefooter">
+            <span style="display: flex; flex-direction: column; justify-content: center; 
+            align-items: center;">
+                <h1>SUBSCRIBE</h1>
+                <p>Sign up with your email address to receive news and updates.</p>
+                <form>
+                    <input type="email" style="width: 244px; height: 51px; background-color: white; padding: 0px 15px" placeholder="Email Address"/>
+                    <input type="button" value="SIGN UP" style="background-color: #262626; color: white; width: 135px; height: 51px;"/>
+                </form>
+            </span>
+        </div>
+
+        <footer>
+            <address style="font: 20px proxima-nova;">
+                459 BROADWAY, NEW YORK(212)<a href="mailto: 555-0123TEMPLATE.PLACEHOLDER@GMAIL.COM" 
+                style="color: white; text-decoration: none; font: 20px adobe-garamond-pro;margin-left: 10px;">
+                555-0123TEMPLATE.PLACEHOLDER@GMAIL.COM</a>
+            </address>
+                <p style="color: silver; font: 20px adobe-garamond-pro;">Powered by 
+                    <a style="text-decoration: underline;">Squarespace</a>
+                </p>
+        </footer>
+    </body>
+</html>
