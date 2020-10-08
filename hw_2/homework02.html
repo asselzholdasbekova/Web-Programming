@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Homework 2</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            p,h1,b{
+                text-align: center;
+            }
+            i{
+                color: white;
+            }
+            img{
+                max-width: 100%;
+            }
+            header{
+                background-color: #1C2F4D;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+
+            nav{
+                display: flex;
+                justify-content: space-between;
+            }
+            #navBar{
+                display: flex;
+                margin-right: 10%;
+                align-items: center;
+                justify-content: flex-end;
+                width: 50%;
+            }
+            .navigation{
+                color: #1C2F4D;
+                margin: 0% 2%;
+                text-decoration: none;
+            }
+            #navBar2{
+                display: none;
+            }
+
+
+            #introBlock{
+                width: 100%;
+                display: flex;
+            }
+            #introImage{
+                width: 40%;
+            }
+            #introText{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 10%;
+            }
+            #introText2{
+                display: none;
+            }
+
+
+            #awardBlock{
+                width: 100%;
+                height: 400px;
+                background-color: rgb(241, 241, 241);
+                margin-top: -330px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .awards{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10%;
+            }
+
+
+            #block3{
+                width: 100%;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                margin: 30px 0px;
+            }
+            #coursesBlock{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .courses{
+                justify-content: space-around;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 30px;
+            }
+
+
+            #block4{
+                width: 100%;
+                height: 800px;
+                background-color: rgb(241, 241, 241);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #coursesList{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #myCourse1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 30%;
+                height: auto;
+                margin: 0px 30px;
+                padding: 10px;
+            }
+            .myCourses{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 30%;
+                height: auto;
+                margin: 0px 30px;
+                padding: 10px;
+            }
+
+
+            #block5{
+                width: 100%;
+                height: 950px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .imagesFor5Block{
+                display: flex;
+                justify-self: center;
+                align-items: center;
+            }
+            .imagesFor5{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            #block6{
+                width: 100%;
+                height: 500px;
+                margin-bottom: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(241, 241, 241);
+            }
+            #textFor6{
+                margin: 0% 15%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #block7{
+                width: 100%;
+                height: 1100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: -100px;
+            }
+            #subBlock7{
+                margin: 0% 15%;
+                display: flex;
+            }
+            .doubleSubBlock7 {
+                display: flex;
+                flex-direction: column;
+            }
+            .doubleSubBlock7 span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10%;
+            }
+            #block7 a{
+                border: 1px solid #D7BD73;
+                color: #D7BD73;
+                padding: 11px 18px;
+                text-decoration: none;
+            }
+            .doubleSubBlock7 span div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            #block8{
+                width: 100%;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #forBlock8{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0% 10%;
+            }
+            .people{
+                width: 20%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            summary{
+                display: flex;
+            }
+            #blueBlock{
+                width: 60%;
+                background-color:#1C2F4D;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #blueBlock p {
+                color: white;
+                font-size: 20px;
+                text-align: left;
+            }
+            #contactArea{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 20px;
+            }
+            #blueBlock b {
+                color: white;
+                font-size: 20px;
+                text-align: left;
+            }
+            #inputArea{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 20px;
+            }
+
+            #inputArea input{
+                padding: 14px 12px ;
+                margin: 20px 0px;
+            }
+
+
+            footer{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media screen and (max-width: 540px) {
+                header, nav{
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+                nav img{
+                    margin: 10px;
+                }
+                #logo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                #navBar{
+                    display: none;
+                }
+                #navBar2{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                #introBlock{
+                    padding: 20px 0px;
+                }
+                #introImage{
+                    display: none;
+                }
+                #introText{
+                    display: none;
+                }
+                #introText2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                #awardBlock{
+                    margin-top: 0px;
+                    flex-direction: column;
+                    height: auto;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .awards{
+                    margin:0px;
+                }
+                
+                #block3{
+                    width: 100%;
+                    height: auto;
+                }
+                #coursesBlock{
+                    margin-top: 0px;
+                    flex-direction: column;
+                    height: auto;
+                    justify-content: center;
+                    align-items: center;
+                }   
+
+                #block4{
+                    width: 100%;
+                    height: auto;
+                    padding: 20px 0px;
+                }
+                .myCourses{
+                    display: none;
+                }   
+                #myCourse1{
+                    width: 90%;
+                }
+
+                #block5{
+                    width: 100%;
+                    height: auto;
+                    padding: 20px 0px;   
+                }
+                .imagesFor5Block{
+                    flex-direction: column;
+                } 
+
+                #block7{
+                    width: 100%;
+                    height: auto;
+                    padding: 20px 0px;   
+                }
+                #startImage7{
+                    display: none;
+                }
+                #subBlock7{
+                    flex-direction: column;
+                }
+                .doubleSubBlock7 span{
+                    margin: 40px 0%;
+                    flex-direction: column;
+                }
+
+                #block8{
+                    width: 100%;
+                    height: auto;
+                    padding: 20px 0px;
+                }
+                .people{
+                    display: none;
+                }
+
+                summary{
+                    flex-direction: column;
+                }
+                #blueBlock{
+                width: 100%;
+                background-color:#1C2F4D;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                }
+                #blueBlock b{
+                    text-align: center;
+                }
+                #blueBlock p{
+                    text-align: center;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <span style="color: white;">60 50 123 654</span>
+            <span id="platforms">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+            </span>
+        </header>
+
+        <nav>
+            <span id="logo"><img src="one-instructor-logo.png"></span>
+            <span id="navBar">
+                <a href="" class="navigation">Home</a>
+                <a href="" class="navigation">My Courses</a>
+                <a href="" class="navigation">About</a>
+                <a href="" class="navigation">My Profile</a>
+                <a href="" class="navigation">Become an Instructor</a>
+                <a href="" class="navigation">Faq</a>
+            </span>
+            <span id="navBar2"><img src="unnamed.png" width="5%" height="5%"><b>Menu</b></span>
+        </nav>
+
+        <div id="introBlock">
+            <span id="introImage"><img src="one-instructor-banner2.png"></span>
+            <span id="introText">
+                <b style="font-size: 30px; margin-bottom: -50px;">Hi, I am</b>
+                <h1 style="font-size: 60px;">Richard Smith</h1>
+                <p style="text-align:justify; margin: 20px; font-size: 20px;">Films can shape the destiny of talented youngsters, 
+                    who want to excel in acting or the art of film making. 
+                    If you have the passion, we have the door open for you!</p>
+            </span>
+            <span id="introText2">
+                <b style="font-size: 30px;">Hi, I am</b>
+                <h1 style="font-size: 60px;">Richard Smith</h1>
+                <p style="font-size: 20px;">Films can shape the destiny of talented youngsters, 
+                    who want to excel in acting or the art of film making. 
+                    If you have the passion, we have the door open for you!</p>
+            </span>
+        </div>
+
+        <div id="awardBlock">
+            <span class="awards">
+                <img src="award-2.png" />
+                <b>Editors Choice</b>
+                <p>2010-2016</p>
+            </span>
+            <span class="awards">
+                <img src="award-1.png" />
+                <b>Best Trainer</b>
+                <p>2010-2016</p>
+            </span>
+            <span class="awards">
+                <img src="award-2.png" />
+                <b>Best Performance</b>
+                <p>2016-2017</p>
+            </span>
+        </div>
+
+        <div id="block3">
+            <img src="title-decor.png">
+            <h1>My Areas of Expertise</h1>
+            <p>With every passing course, I have gained more knowledge!</p>
+            <div id="coursesBlock">
+                <span class="courses">
+                    <img src="communication.jpg">
+                    <img src="speaker.png">
+                    <b>Commnication</b>
+                    <p>1 course(s)</p>
+                </span>
+                <span class="courses">
+                    <img src="education.jpg">
+                    <img src="video.png">
+                    <b>Education</b>
+                    <p>1 course(s)</p>
+                </span>
+                <span class="courses">
+                    <img src="theater.jpg">
+                    <img src="movie.png">
+                    <b>Theater</b>
+                    <p>2 course(s)</p>
+                </span>
+            </div>
+        </div>
+
+        <div id="block4">
+            <img src="title-decor.png">
+            <h1>My Courses</h1>
+            <p>Films can shape the destiny of talented youngsters, who want to</p>
+            <div id="coursesList">
+                <div id="myCourse1">
+                    <img src="course1-773x520.jpg"/>
+                    <b>Richard Smith</b>
+                    <p>Dancer & Instructor</p>
+                    <h1>Communication Skills</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean at lobortis augue. Nam tempus auctor odio ut aliquam. 
+                        Pellentesque habitant morbi tristique senectus et netus et 
+                        malesuada fames ac turpis egestas.</p>
+                    <a>Add to Cart</a>
+                    <span>&#xf500 1 &#xf006 4.5</span>
+                    <span>&#xf154 20</span>
+                </div>
+                <div class="myCourses">
+                    <img src="course2-773x520.jpg"/>
+                    <b>Richard Smith</b>
+                    <p>Dancer & Instructor</p>
+                    <h1>Teaching Science</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean at lobortis augue. Nam tempus auctor odio ut aliquam. 
+                        Pellentesque habitant morbi tristique senectus et netus et 
+                        malesuada fames ac turpis egestas.</p>
+                    <a>Add to Cart</a>
+                    <span>&#xf500 1 &#xf006 4.5</span>
+                    <span>&#xf154 20</span>
+                </div>
+                <div class="myCourses">
+                    <img src="course3-773x520.jpg"/>
+                    <b>Richard Smith</b>
+                    <p>Dancer & Instructor</p>
+                    <h1>Data Structures</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean at lobortis augue. Nam tempus auctor odio ut aliquam. 
+                        Pellentesque habitant morbi tristique senectus et netus et 
+                        malesuada fames ac turpis egestas.</p>
+                    <a>Add to Cart</a>
+                    <span>&#xf500 1 &#xf006 4.5</span>
+                    <span>&#xf154 20</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="block5">
+            <img src="title-decor.png">
+            <h1>My Endorsements</h1>
+            <p>I learn from every student who is in my class. Because learning is a 2-way process.</p>
+            <div class="imagesFor5Block">
+                <div class="imagesFor5">
+                    <img src="p1.png">
+                    <b>Assessing the Need</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                </div>
+                <div class="imagesFor5">
+                    <img src="p2.png">
+                    <b>Estimating your Potential</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                </div>
+                <div class="imagesFor5"> 
+                    <img src="p3.png">
+                    <b>Setting the Goal</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                </div>
+            </div>
+            <div class="imagesFor5Block">
+                <div class="imagesFor5">
+                    <img src="p4.png">
+                    <b>Improvising existing Skills</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                </div>
+                <div class="imagesFor5">
+                    <img src="p5.png">
+                    <b>Developing the Skills</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                </div>
+                <div class="imagesFor5">
+                    <img src="p6.png">
+                    <b>Individual Growth</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="block6">
+            <div id="textFor6">
+                <h1>Learn the Practical way</h1>
+                <p>Films can shape the destiny of talented youngsters, who want to</p>
+                <p>Films can shape the destiny of talented youngsters, 
+                who want to excel in acting or the art
+                of film making. If you have the passion, we have the door open for you! 
+                Award winning artists & professionals teach you the art of acting, film making, 
+                cinematography and screenwriting among others.</p>
+            </div>
+        </div>
+
+        <div id="block7">
+            <img src="light-box-img.jpg" id="startImage7">
+            <img src="title-decor.png">
+            <h1>Holistic Approach to Teaching</h1>
+            <p>I offer myriad subjects of study in your journey of mastering yourself.</p>
+            <div id="subBlock7">
+                <div class="doubleSubBlock7">
+                    <span>
+                        <div><img src="img1-750x938.jpg"></div>
+                        <div>
+                            <h2>Interaction</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                            <a href="">Learn more</a>
+                        </div>
+                    </span>
+                    <span>
+                        <div>
+                            <h2>Project Completion</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                            <a href="">Learn more</a>
+                        </div>
+                        <div><img src="img2-750x938.jpg"></div>
+                    </span>
+                </div>
+                
+                <div class="doubleSubBlock7">
+                    <span>
+                        <div><img src="img3-750x938.jpg"></div>
+                        <div>
+                            <h2>Classroom Lectures</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                            <a href="">Learn more</a>
+                        </div>
+                    </span>
+                    <span>
+                        <div>
+                            <h2>Hands on Experience</h2>
+                            <p>Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit. 
+                                Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.</p>
+                            <a href="">Learn more</a>
+                        </div>
+                        <div><img src="img4.jpg"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="block8">
+            <img src="title-decor.png">
+            <h1>What people think about me</h1>
+            <p>Knowing what students think helps my growth</p>
+            <p>Films can shape the destiny of talented youngsters, who want to excel in acting or the art
+                of film making. If you have the passion, we have the door open for you! Award winning
+                artists & professionals teach you the art of acting, film making, cinematography
+                and screenwriting among others.</p>
+            <div id="forBlock8">
+                <div class="people">
+                    <img src="Screenshot (267).png">
+                    <b>Jeanette Gutierrez</b>
+                    <p>Director</p>
+                </div>
+                <div class="people">
+                    <img src="Screenshot (268).png">
+                    <b>Winston Harrington</b>
+                    <p>Singer</p>
+                </div>
+                <div class="people">
+                    <img src="Screenshot (267).png">
+                    <b>Jeanette Gutierrez</b>
+                    <p>Theatre Personality</p>
+                </div>
+            </div>
+        </div>
+        <summary>
+            <div id="blueBlock">
+                <div id="contactArea">
+                    <b>RECENT WORKS</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean at lobortis augue. Nam tempus auctor odio ut aliquam. 
+                        Pellentesque habitant morbi tristique senectus et netus et 
+                        malesuada fames ac turpis egestas.</p>
+                    <b>Im here</b>
+                </div>
+                <div id="inputArea">
+                    <b>QUICK LINKS</b>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Message"><br>
+                    <input type="button" value="Submit" style="background-color: #D7BD73;">
+                </div>
+            </div>
+            <div><img src="map.jpg"></div>
+        </summary>
+        <footer><p style="color:gray;">&copy 2018 Kalvi. All Rights Reserved</p></footer>
+    </body>
+</html>
