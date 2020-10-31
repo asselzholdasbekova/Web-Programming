@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe with AI</title>
+        <meta charset="UTF-8">
+
+        <style>
+            body{
+                background-color:blanchedalmond;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            h1{
+                text-align: center;
+                font-size: 60px;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            td{
+                border: 5px solid black;
+                height: 150px;
+                width: 150px;
+                text-align:center;
+                vertical-align: middle;
+                font-size: 130px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            tr:first-child td{
+                border-top: none;
+            }
+            tr:last-child td{
+                border-bottom: none;
+            }
+            td:first-child{
+                border-left: none;
+            }
+            td:last-child{
+                border-right: none;
+            }
+
+            .end{
+                background-color: rgba(128, 128, 128, 0.9);
+                border-radius:3px;
+                color: white;
+                margin-top: -350px;
+                display:none;
+                font-size: 50px;
+                text-align: center;
+                padding: 50px 10px;
+            }
+            button{
+                border-radius: 2px;
+                background-color: rgba(128, 128, 128, 0.8);
+            }
+            img{
+                width: 20px;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tic Tac Toe</h1>
+        <table>
+            <tr>
+                <td class="box" id="0"></td>
+                <td class="box" id="1"></td>
+                <td class="box" id="2"></td>
+            </tr>
+            <tr>
+                <td class="box" id="3"></td>
+                <td class="box" id="4"></td>
+                <td class="box" id="5"></td>
+            </tr>
+            <tr>
+                <td class="box" id="6"></td>
+                <td class="box" id="7"></td>
+                <td class="box" id="8"></td>
+            </tr>
+        </table>
+
+        <div class="end">
+            <div class="endText"></div>
+        </div>
+        <button onClick="start()"><img src="replay-512.png"/></button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
