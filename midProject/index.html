@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Coding school "Hello, World!</title>
+        <title>Coding school "Hello, World!"</title>
 
         <meta charset="UTF-8"/>
 
@@ -15,6 +15,8 @@
 
         <link rel="stylesheet" type="text/css" href="lightbox.min.css"/>
         <script src="lightbox-plus-jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <nav class="navbar-inverse">
@@ -25,20 +27,26 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand">Hello, World</a>
+                    <a class="navbar-brand">
+                        Hello, World!
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Process</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Purchase</a></li>
+                        <li><a href="#mainPage">Main Page</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#slides">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#progressBlock">Our Progress</a></li>
+                        <li><a href="#address">Address</a></li>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+
         <div class="row" id="mainPage">
             <div id="textPart" class="col-sm-12 col-md-6">
                 <div id="introducingPart">
@@ -56,32 +64,175 @@
                 <img src="images/imageForProject0.jpg"/>
             </div>
         </div>
-    
-        <div class="courses">
-        	<h2 class="courses_h2">COURSES</h2>
-        	<h5 class="courses_h5">Preparation Leads to Success</h5>
-        	<h5 class="courses2_h5">In 6 months with us, you will do and learn more than yourself in 2 years and you will be ready for professional development in real projects. It won't be easy There will be a result</h5>
-        	<div class="row">
-                <a class="col-md-3"><img src="images/php.png"> </a>
-                <a class="col-md-3"><img src="images/java.png"></a>
-                <a class="col-md-3"><img src="images/python.png"></a>
-                <a class="col-md-3"><img src="images/c++.png"> </a>
+
+        <div class="courses" id="courses">
+            <h2 class="courses_h2">COURSES</h2>
+            <h5 class="courses_h5">Preparation Leads to Success</h5>
+            <div id="captionCourses">
+                <i> ALL COURSES</i>
+                <a><img class="courses-img" src="images/courses-icon.png"/></a>
             </div>
             <div class="row">
-                <a class="col-md-3"><img src="images/js.png"> </a>
-                <a class="col-md-3"><img src="images/ruby.png"></a>
-                <a class="col-md-3"><img src="images/html.png"></a>
-                <a class="col-md-3"><img src="images/R.png"> </a>
-            </div>           
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <img src ="images/python.jpg"/>
+                        <select id ="coursp">
+                            <option>The Complete Python Course from scratch</option>
+                            <option>2020 Complete Python Bootcamp</option>
+                            <option>The Python Mega Course</option>
+                            <option>The Python Bible</option>
+                            <option>Learn Python Programming Masterclass</option>
+                            <option>Python and Django Full Stack</option>
+                            <option>Learn Python & Ethical Hacking</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <img src ="images/java.jpg"/>
+                        <select>
+                            <option>Java programming from scratch</option>
+                            <option>Programming Java for Beginners</option>
+                            <option>Introduction to Java for Programmers</option>
+                            <option>Selenium WebDriver with Java</option>
+                            <option>Android O & Java</option>
+                            <option>Modern Java - Learn Java 8</option>
+                            <option>Algorithmic Problems in Java</option>
+                            <option>What's New in Java 9</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <img src ="images/c++.jpg"/>
+                        <select>
+                            <option>C++ programming from scratch</option>
+                            <option>Programming c++ for Beginners</option>
+                            <option>Introduction to c++ for Programmers</option>
+                            <option>Learn c++ Programming Masterclass</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <img src ="images/The Web Developer Bootcamp 2020.jpg"/>
+                        <select>
+                            <option>The Web Developer Bootcamp 2020</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <img src ="images/html-css.jpg"/>
+                        <select>
+                            <option>Learn HTML&CSS - For Beginners</option>
+                            <option>Web Design for Beginners HTML&CSS</option>
+                            <option>Step-by-step HTML and CSS</option>
+                            <option>HTML Tutorial and CSS Tutorial</option>
+                            <option>JavaScript and HTML&CSS</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <img src ="images/js.jpg"/>
+                        <select>
+                            <option>Learn JavaScript:Full-Stack from Scratch</option>
+                            <option>The Complete JavaScript Course </option>
+                            <option> JavaScript From The Beginning</option>
+                            <option>Modern JavaScript</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <img src ="images/bootstrap.jpg"/>
+                        <select>
+                            <option>Learn Bootstrap:Full-Stack from Scratch</option>
+                            <option>HTML5 + CSS3 + Bootstrap</option>
+                            <option>The Bootstrap 4 Bootcamp</option>
+                            <option>HTML, JavaScript, & Bootstrap</option>
+                            <option>Create Modern Website Using Bootstrap</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <img src ="images/php-mysql-advanced.jpg"/>
+                        <select>
+                            <option>PHP+MYSQL for Beginners</option>
+                            <option>Object Oriented PHP & MVC</option>
+                            <option>Learn MySQL</option>
+                            <option>The Complete PHP MYSQL</option>
+                            <option>PHP+MYSQL advanced</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+
+        <div class="slides" id="slides">
+            <div id="slides-txt">
+                <h1>Students' Social Life</h1>
+                <p>
+                    We also provide wonderful student life with interesting activities and 
+                    unforgettable moments
+                </p>
+            </div>
+            <div class="slider">
+                <div class="images">
+                    <input type="radio" name="changeButton" id="chButton-1">
+                    <input type="radio" name="changeButton" id="chButton-2">
+                    <input type="radio" name="changeButton" id="chButton-3">
+                    <input type="radio" name="changeButton" id="chButton-4">
+    
+                    <div class="image" id="image-1"><img src="images/image02size1.jpg"/></div>
+                    <div class="image"><img src="images/image08size1.jpg"/></div>
+                    <div class="image"><img src="images/image09size1.jpg"/></div>
+                    <div class="image"><img src="images/image10size1.jpg"/></div>
+
+                    <div class="userChange">
+                        <label for="chButton-1" class="userChangeBtn"></label>
+                        <label for="chButton-2" class="userChangeBtn"></label>
+                        <label for="chButton-3" class="userChangeBtn"></label>
+                        <label for="chButton-4" class="userChangeBtn"></label>
+                    </div>
+                    
+                    <div class="autoChange">
+                        <div class="autoChangeBtn" id="autoChangeBtn-1"></div>
+                        <div class="autoChangeBtn" id="autoChangeBtn-2"></div>
+                        <div class="autoChangeBtn" id="autoChangeBtn-3"></div>
+                        <div class="autoChangeBtn" id="autoChangeBtn-4"></div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var count=1;
+                setInterval(function(){
+                    document.getElementById("chButton-"+count).checked=true;
+                    count++;
+                    if(count>4){
+                        count=1;
+                    }
+                },3000);
+            </script>
+            <div>
+                <button onclick="displayFn()" id="displayBtn">Show Full Gallery</button>
+            </div>
         </div>
 
-        <div id="gallery" class="row">
-            <div id="descriptionToGallery" class="col-xs-12 col-md-4">
-                <b>Students' Social Life</b><br>
-                <i> OUR GALLERY</i>
-                <a><img src="images/gallery-icon.webp"/></a>
-            </div>
-            <div id="galleryArea" class="col-xs-12 col-md-8">
+        <div id="gallery">
+            <div id="galleryArea" >
                 <a href="images/image01size1.jpg" data-lightbox="mygallery" data-title="">
                     <img src="images/image01size0.jpg">
                 </a>
@@ -132,29 +283,58 @@
                 </a>
             </div>
         </div>
-        <div class="reviews">
+
+        <div class="reviews" id="reviews">
             <h2 class="reviews_h2">REVIEWS</h2>
             <h5 class="reviews_h5">Your success is our responsibility</h5>
-            <div class="row" id="revi">
-                <div class="col-md-3"> 
-                    <img class="rev1" src="images/rev1.png"> 
+            <div class="row" id="reviews-pt-1">
+                <div class="col-md-3 reviews_img1">
+                    <img src="images/Asiya.jpg">
+                    <h2>Asiya</h2>
+                    <h5>She course has completed its main task - it taught how to effectively solve problems using the css/java stack, starting with the philosophy of testing and up to deploying to the server. The material is carefully selected, the information is presented in an accessible and competent manner, approaches that are used almost daily are touched upon. Additional master classes allowed for a deeper understanding of the structure of the framework and related development tools. If you are looking for a quick start in Rails,  but at the same time want to write quality applications using the best practices,  then you are definitely here. As a plus - a community of like-minded people, ready to help both during and after the end of the courses.</h5>
                 </div>
-                <div class="col-md-9" id="revvv">
-                    <h5 class="reviews2_h2">What our graduates say</h5> 
-                    <h5 class="reviews3_h2">The course has completed its main task - 
-                        it taught how to effectively solve problems using the Ruby / Rails stack, 
-                        starting with the philosophy of testing and up to deploying to the server. 
-                        The material is carefully selected, the information is presented in an 
-                        accessible and competent manner, approaches that are used almost daily are touched upon. 
-                        Additional master classes allowed for a deeper understanding of the structure
-                         of the framework and related development tools. If you are looking for a quick start in Rails, 
-                         but at the same time want to write quality applications using the best practices, 
-                         then you are definitely here. As a plus - a community of like-minded people, 
-                         ready to help both during and after the end of the courses.</h5>
-                    <h5 class="reviews4_h5">Artyom Pyankov</h5>
+                <div class="col-md-3 reviews_img1">
+                    <img src="images/Zhuldyz.jpg">
+                    <h2>Zhuldyz</h2>
+                    <h5>The most thoughtful of all courses on the network, I know, because spent quite a lot of time to choose the right one. This course is the most structured and accessible, practice and competent mentoring from the mentors allows you to get maximum benefit and real knowledge, all other things being equal. And the most important thing is that when watching screencasts you don't fall asleep, but you really get involved in the process. The best confirmation of my words is the experience of colleagues in the shop, from among those who took the course and found a job. Recommend!</h5>
+                </div>
+                <div class="col-md-3 reviews_img1">
+                    <img src="images/Ayaulym.jpg">
+                    <h2>Ayaulym</h2>
+                    <h5>Exciting course! Themes are selected taking into account the real conditions of development. The quality and speed of development after passing have increased significantly. The course is constantly kept up to date. Constant feedback, cool mentors, a free schedule for training, and most importantly, happiness from a new professional level. I recommend to everyone for passing!</h5>
+                </div>
+                <div class="col-md-3 reviews_img1">
+                    <img src="images/Alina.jpg">
+                    <h2>Alina</h2>
+                    <h5>It is rare when you can find a decent course, for which neither money nor time is a pity. This is exactly the same course!) The lessons helped to systematize knowledge, put everything in the head on the shelves, fill in the gaps, get a handle on some points. If I studied it on my own, in such a short time, I probably wouldn't have been able to figure out half of the topics. And then there are tips from the curators, code reviews and motivation in the form of leading fellow students. All this gave a good impetus to development and a desire to write not only working, but also good code.</h5>
+                </div>
+            </div>
+            <div class="row" id="reviews-pt-2">
+                <div class="col-md-3 reviews_img2">
+                    <img src="images/Arailym.jpg">
+                    <h2>Arailym</h2>
+                    <h5>The course is interesting, sometimes difficult, sometimes controversial. It is difficult to evaluate there are elements that I would add, there are those that, it seems to me, can be filed differently, some crgbyrfcns should be updated, etc. tons etc. The main advantage of the course is the output: good stack, clean and logical code. This is how my knowledge was assessed at the interview. I got the job before the end of my studies. So that your task is to give you knowledge with which you can get a job, the courses are 100% complete
+                    </h5>
+                </div>
+                <div class="col-md-3 reviews_img2">
+                    <img src="images/Bayan.jpg">
+                    <h2>Bayan</h2>
+                    <h5>I took this course with the aim of getting rid of white spots in knowledge and learning the best practices. For example, all code in a tutorial project is covered by tests. Understanding the value of TDD does not come immediately, but when a lot of tests have already been written and half of the project is done. At some point, I noticed and was glad that I no longer need to click the application in the browser again and again in search of errors, but rather just run the tests in the console. Each assignment on the course is reviewed - checked by a mentor. On the one hand, it helps you fix mistakes and learn how to do better. On the other hand, you gain confidence in your code.</h5>
+                </div>
+                <div class="col-md-3 reviews_img2">
+                    <img src=images/Zhanagul.jpg>
+                    <h2>Zhanagul</h2>
+                    <h5>Awesome course. A special plus is the ability to communicate with other participants, help and ask for help. You can see how different participants do the same task in different ways and compare with their own.
+                        Excellent training, finished basic and intensive, studied for half a year, earned money in 1.5 months that I spent on training, got a job a month before the end of the courses.</h5>
+                </div>
+                <div class="col-md-3 reviews_img2">
+                    <img src="images/Dinara.jpg">
+                    <h2>Dinara</h2>
+                    <h5>The decision to enroll in this course is one of my best decisions over the past year :) I wish I had done it earlier. Definitely worth the money and time invested. The optimal balance of theory and practice, heavy load, vigorous pace. A good level of presentation of the material (quality of screencasts, manner of presentation, degree of detail) and the right controls! :) I took both courses - basic and advanced, in total, the training lasts about six months, but they somehow flew very quickly and imperceptibly for me. It’s even a pity that it’s over. Guys who are just going, be prepared for what will be difficult in places, especially if you, like me, plan to combine your studies with a full-fledged work schedule. Stock up on strength, the right motivation and be prepared for some sacrifices :)</h5>
                 </div>
             </div>
         </div>
+
         <div id="progressBlock">
             <div id="students" class="row">
                 <div class="col-xs-12 col-md-6">
@@ -223,15 +403,39 @@
                 </div>
             </div>
         </div>
-        <div class="address">
-            <h2 class="address_h2">OUR ADDRESSES</h2>
-            <h5 class="adress_h5">Nur-Sultan city, Abylai Khan street</h5>
-            <h5 class="adress2_h5">Almaty city, Al Farabi street</h5>
-            <h5 class="adress3_h5">Pavlodar city, Tolstoy street</h5>
-            <h5 class="adress4_h5">Semey city, Baiseitova street</h5>
-            <h5 class="adress5_h5">Karaganda city, Gogol street</h5>
+
+
+        <div class="address" id="address">
+            <h2 class="address_caption">OUR ADDRESSES</h2>
+            <div class="row" id="frames">
+                <div class="col-md-6">
+                    <h5 class="adress_txt">Nur-Sultan city, Abylai Khan street</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.7024093626624!2d71.39785571528738!3d51.113950579572396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42458695c93afaaf%3A0xef0ec94aac7cadb3!2sTuran%20Ave%2C%20Nur-Sultan%20020000!5e0!3m2!1sen!2skz!4v1604668611589!5m2!1sen!2skz" 
+                    width="90%" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="adress_txt">Almaty city, Al Farabi street</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.7500095350656!2d76.92167891494012!3d43.214732479138796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f359e701c09%3A0x7010c1bc659dd64!2sAl-Farabi%20Avenue%2C%20Almaty!5e0!3m2!1sen!2skz!4v1604671136712!5m2!1sen!2skz" 
+                    width="90%" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
             <h5 class="bv">.</h5>
         </div>
+
+
+        <div id="register" class="register">
+            <div id="register-form" class="register-form">
+                <b>Register</b>
+                <form id="registerInputs"> 
+                    <input type="text" placeholder="Name" class="register-form-1">
+                    <input type="email" placeholder="Email Address" class="register-form-1">
+                    <textarea placeholder="Message"></textarea>
+                    <input type="submit" name="Submit" id="submit">
+                </form>
+            </div>
+        </div>
+
+
         <footer id="footer" class="footer">
             <b>Keep in touch</b>
             <div id="platforms" class="row">
@@ -246,5 +450,7 @@
                 <a href="#" class="col-xs-12 col-md-6"><img src="images/whatsapp-icon.png"/></a>
             </div>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
