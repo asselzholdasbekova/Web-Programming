@@ -196,14 +196,18 @@ img{
     cursor: pointer;
     margin-top: 20px;
 }
+#progressBlock{
+    width: 100%;
+    position: relative;
+}
 #students img{
     border-radius: 90px;
 }
 .studentLeft{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     margin: 20px 40px;
+    align-items: center;
     display: flex;
     text-align: center;
 }
@@ -217,18 +221,23 @@ img{
 }
 #students{
     width: 100%;
-    position: relative;
 }
 .overlay {
     width: 100%;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     background-color: #2828285d;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#achievementD{
+    width: 70%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -236,12 +245,6 @@ img{
     text-align: center;
     font-size: 70px;
     color: white;
-}
-.achievements{
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .achievements p{
     font-size: 20px;
@@ -349,6 +352,9 @@ footer a{
 	font-size: 32px;
     line-height: 4.5em;
     color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .adress_txt{
@@ -498,4 +504,12 @@ iframe{
 	color:white;
 	margin-left: auto;
     margin-right: auto;
+}
+@media screen and (max-width:540px){
+    #introducingPart{
+        text-align: center;
+    }
+    #imagePart{
+        display: none;
+    }
 }
