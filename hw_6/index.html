@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 6</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        
+    </head>
+    <body>
+        <div id="task01" class="tasks">
+            <div class="forFlex">
+                <a>1st Number: </a><input type="number" id="input01">
+            </div>
+            <div class="forFlex">
+                <a>2nd Number: </a><input type="number" id="input02">
+            </div>
+            <input type="button" value="Multiply" onclick="multiplication()">
+            <input type="button" value="Divide" onclick="division()">
+            <div>
+                <a>The result is: </a><a id="resultValue"></a>
+            </div>
+        </div>
+
+        <div id="task02" class="tasks">
+            <div class="forFlex">
+                <a>Initial value: </a><input type="number" id="initialValue" >
+                <select id="selection">
+                    <option value="fc">F to C</option>
+                    <option value="cf">C to F</option>
+                </select>
+            </div>
+            <input type="button" value="Convert" onclick="conversion()">
+            <div>
+                <a>Converted value: </a><a id="convertedValue"></a>
+            </div>
+        </div>
+
+        <div id="task03" class="tasks">
+            <p>Input radius value and get the volume of the sphere</p>
+            <div class="forFlex">
+                <a>Radius: </a>
+                <input type="number" id="radius">
+            </div>
+            <div class="forFlex">
+                <a>Volume: </a>
+                <input type="number" id="volume">
+            </div>
+            <input type="button" value="Calculate" onclick="displayVolume()"/>
+        </div>
+
+        <div id="task04" class="tasks">
+            <div class="forFlex">
+                <a>Number: </a>
+                <input type="number" id="originalNumber">
+            </div>
+            <div class="forFlex">
+                <a>Reversed number: </a>
+                <input type="number" id="reversedNumber">
+            </div>
+            <input type="button" value="Reverse" onclick="reverseq()"/>
+        </div>
+
+        <div id="task05">
+            <div id="border1">
+                <div id="border2"></div>
+            </div>
+        </div>
+
+        <div id="task06">
+            <div id="border3"></div>
+        </div>
+
+        <div id="task07">
+            <div id="background">
+                <div id="circle1" class="circles"></div>
+                <div id="circle2" class="circles"></div>
+                <div id="circle3" class="circles"></div>
+                <div id="circle4" class="circles"></div>
+                <div id="circle5" class="circles"></div>
+                <div id="circle6" class="circles"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
