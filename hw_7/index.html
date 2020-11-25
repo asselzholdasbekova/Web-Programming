@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div id="task01">
+            <div id="rectangle">
+                <a id="titleCD">Select Time</a>
+                <div id="selectTime">
+                    <input type="date" class="inputs" id="selectedDate" onchange="userDate(this.value)"/>
+                    <input type="time" class="inputs" id="selectedTime" onchange="userTime(this.value)"/>
+                </div>
+                <div id="startBtn">
+                    <input type="button" class="inputs" value="Start" onclick="forBtn()"/>
+                </div>
+                <div id="displayTime">
+                    <div class="measures">
+                        <div id="days">-</div>
+                        <a>DAYS</a>
+                    </div>
+                    <div class="measures">
+                        <div id="hours">-</div>
+                        <a>HOURS</a>
+                    </div>
+                    <div class="measures">
+                        <div id="minutes">-</div>
+                        <a>MINUTES</a>
+                    </div>
+                    <div class="measures">
+                        <div id="seconds">-</div>
+                        <a>SECONDS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="task02">
+            <div id="mainBlock">
+                <h1>Word Counter</h1>
+                <textarea placeholder="Enter your text" id="userText" onchange="counterFn(this.value)"></textarea>
+                <div class="boxes">
+                    <span class="lSpan">
+                        <a>Characters:</a><a id="characters">-</a>
+                    </span>
+                    <span class="rSpan">
+                        <a>Words:</a><a id="words">-</a>
+                    </span>
+                </div>
+                <div class="boxes">
+                    <span class="lSpan">
+                        <a>Sentences:</a><a id="sentences">-</a>
+                    </span>
+                    <span class="rSpan">
+                        <a>Paragraphs:</a><a id="paragraphs">-</a>
+                    </span>
+                </div>
+                <div class="boxes">
+                    <span>
+                        <a>Reading Time:</a><a id="readingTime">-</a>
+                    </span>
+                </div>
+
+                <b>Top keywords</b>
+                <div id="keywords">
+                    <span class="lSpan">
+                        <a id="k0"></a><a id="c0"></a>
+                    </span>
+                    <span class="rSpan">
+                        <a id="k1"></a><a id="c1"></a>
+                    </span>
+                    <span class="lSpan">
+                        <a id="k2"></a><a id="c2"></a>
+                    </span>
+                    <span class="rSpan">
+                        <a id="k3"></a><a id="c3"></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
