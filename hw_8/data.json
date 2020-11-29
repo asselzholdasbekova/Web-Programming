@@ -1,0 +1,25 @@
+[{
+        "question": "Q1: Which of the followings is the capital of KZ?",
+        "option1": "Astana",
+        "option2": "Nur-Sultan",
+        "option3": "Aqmola",
+        "option4": "Tselinograd",
+        "answer": "Astana"
+    },
+    {
+        "question": "Q2: Which of the followings is not the color of iPhone 12 Pro?",
+        "option1": "Gold",
+        "option2": "Darkblue",
+        "option3": "Red",
+        "option4": "White",
+        "answer": "Red"
+    },
+    {
+        "question": "Q3: Who is from Black Clover?",
+        "option1": "Iyuna",
+        "option2": "Kilua",
+        "option3": "Kagiyama",
+        "option4": "Obito",
+        "answer": "Iyuna"
+    }
+]

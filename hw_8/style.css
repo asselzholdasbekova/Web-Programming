@@ -1,0 +1,73 @@
+#task{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#submit{
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+#quiz{
+    width: 60%;
+    height: auto;
+    padding: 50px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#registration{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#registerInputs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#register-form{
+    width: 90%;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+form div{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+#result{
+    width: 60%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.answers{
+    display: none;
+}
