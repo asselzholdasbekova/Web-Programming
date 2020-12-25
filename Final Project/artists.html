@@ -1,0 +1,658 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIXBEAT</title>
+    <link rel="shortcut icon" href="images/ico.ico">
+
+    <!--Bootstrap CDN links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=LLmZ7zepMlatjPeSM5VWdZM534xharfZNZfVWq43wVrTlq3WUZssF0NzGoZL17ECDA45E7_XzW8cTkqlbUubnQ" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--Page's style-->
+    <link rel="stylesheet" href="artists.css">
+
+    <!--jQuery JS link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--aos CSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/ico.ico">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html" id="artistsNav">Artists</a></b></li>
+                <li><b><a href="videos.html">Videos</a></b></li>
+                <li><b><a href="playlists.html">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
+                <li><b><a href="contacts.html">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav class="socials" style="margin-right: -31px;" >
+            <a href="https://vk.com/id321027378" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+            </a>
+            <a href="https://www.instagram.com/dinyanyaa" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+            </a>
+        </nav>
+
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <div id="artists">
+        <div class="container">
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Ariana Grande</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(0)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Shawn Mendes</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(1)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo"  data-aos="zoom-in-up">
+                    <div class="names">Dua Lipa</div>
+                </div>
+                <div class="artist-btn"  data-aos="zoom-in-up">
+                    <button onclick="displayInfo(2)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Justin Bieber</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(3)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Ed Sheeran</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(4)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Cardi B</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(5)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Ninety One</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(6)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Toregali Toreali</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(7)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Qairat Nurtas</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(8)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Bonapart</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(9)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">BTS</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(10)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">BLACKPINK</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(11)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">BIGBANG</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(12)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">PSY</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(13)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Mdee</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(14)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Limba</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(15)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">abdr</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(16)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Halsey</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(17)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Khalid</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(18)" class="btn btn-default">About</button>
+                </div>
+            </a>
+
+            <a class="artist">
+                <div class="artist-logo" data-aos="zoom-in-up">
+                    <div class="names">Billie Eilish</div>
+                </div>
+                <div class="artist-btn" data-aos="zoom-in-up">
+                    <button onclick="displayInfo(19)" class="btn btn-default">About</button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist0">
+        <div class="info">
+            <img onclick="closeInfo(0)" class="close" src="images/close.png">
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/ariana.jpeg">
+                    <h2 class="col-md-7 artist-name">Ariana Grande</h2>
+                </div>
+                <p class="artist-info">
+                    Ariana Grande-Butera is an American singer and actress. 
+                    She possesses a four-octave vocal range and whistle register, 
+                    both of which have earned Grande praise from music critics. 
+                    Born in Boca Raton, Florida, Grande began her career at age 15 in the 2008 Broadway musical 13.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR?si=e5R1M-2uTJGP2EUDd24LSw" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist1">
+        <div class="info">
+            <img onclick="closeInfo(1)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/shawn.jpg">
+                    <h2 class="col-md-7 artist-name">Shawn Mendes</h2>
+                </div>
+                <p class="artist-info">
+                    Shawn Peter Raul Mendes is a Canadian singer and songwriter. 
+                    He gained a following in 2013, posting song covers on the video-sharing application Vine. 
+                    The following year, he caught the attention of artist manager Andrew Gertler and Island Records A&R Ziggy Chareton, 
+                    which led to him signing a deal with the record label. He has since released three studio albums, 
+                    headlined three world tours, and received several awards.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/7n2wHs1TKAczGzO7Dd2rGr?si=26z73-ioQtOqn9xivP6Fxw" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist2">
+        <div class="info">
+            <img onclick="closeInfo(2)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/dua.jpg">
+                    <h2 class="col-md-7 artist-name">Dua Lipa</h2>
+                </div>
+                <p class="artist-info">
+                    Dua Lipa is an English singer and songwriter. After working as a model, 
+                    she signed with Warner Music Group in 2015 and released her self-titled debut album in 2017. 
+                    The album peaked at number three on the UK Albums Chart, and produced nine singles, 
+                    including "Be the One" and "IDGAF", and the UK number-one single "New Rules", 
+                    which also peaked at number six in the US. In 2018, 
+                    Lipa won the Brit Awards for British Female Solo Artist and British Breakthrough Act.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we?si=Kbf8rr_mQqOlSi3IBhryQg" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist3">
+        <div class="info">
+            <img onclick="closeInfo(3)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/justin.jpg">
+                    <h2 class="col-md-7 artist-name">Justin Bieber</h2>
+                </div>
+                <p class="artist-info">
+                    Justin Drew Bieber  Discovered at age 13 by talent manager Scooter Braun after he had watched his YouTube cover song videos, 
+                    Bieber was signed to RBMG Records in 2008. With Bieber's debut EP My World,
+                     released in late 2009, Bieber became the first artist to have seven songs from a debut record chart on the Billboard Hot 100.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s?si=CRizaNTYSa6c77Slrz4eiw" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist4">
+        <div class="info">
+            <img onclick="closeInfo(4)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/ed.jpg">
+                    <h2 class="col-md-7 artist-name">Ed Sheeran</h2>
+                </div>
+                <p class="artist-info">
+                    Edward Christopher Sheeran is an English singer, songwriter, musician, record producer, and actor. 
+                    After first recording music in 2004, he began gaining attention through YouTube. 
+                    In early 2011, Sheeran independently released the extended play, No. 5 Collaborations Project. 
+                    He signed with Asylum Records the same year.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V?si=tX5nlg1YRKy04cuPEl0ElA" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist5">
+        <div class="info">
+            <img onclick="closeInfo(5)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/cardi.jpg">
+                    <h2 class="col-md-7 artist-name">Cardi B</h2>
+                </div>
+                <p class="artist-info">
+                    Belcalis Marlenis Almánzar, known professionally as Cardi B, is an American rapper, 
+                    songwriter, and actress.[2] Born in Manhattan and raised in the Bronx, New York City, 
+                    she became an Internet celebrity after several of her posts and videos became popular 
+                    on Vine and Instagram.[3] From 2015 to 2017, she appeared as a regular cast 
+                    member on the VH1 reality television series Love & Hip Hop: New York, 
+                    which depicted her pursuit of her music aspirations. 
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/4kYSro6naA4h99UJvo89HB?si=m4alC9W5QIaGNKJHrCkHZg" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist6">
+        <div class="info">
+            <img onclick="closeInfo(6)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/ninety.jpeg">
+                    <h2 class="col-md-7 artist-name">Ninety One</h2>
+                </div>
+                <p class="artist-info">
+                    Ninety One or 91 (Kazakh: Тоқсан бір, Toqsan bir) is a Kazakh boy group formed by JUZ Entertainment in 2015.
+                     The band consists of four members: Alem, Ace, Zaq, and Bala. Once a five-member group, 
+                     A.Z. left in 2020. Ninety One is the pioneer act of a new musical genre called Q-pop (Qazaq-pop)
+                      which could be called a symbiosis of Western and Asian pop music. 
+                      The group was produced by Yerbolat Bedelkhan, a member of the Kazakh music unit "Orda".
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/4ZhOoRZ0JE0enmVPAjkEU2?si=BMXfQXZxS_SBW3H9YNrBgw" target="_blank">Open in Spotify</a>
+            </div>"
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist7">
+        <div class="info">
+            <img onclick="closeInfo(7)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/toregali.jpg">
+                    <h2 class="col-md-7 artist-name">Toregali Toreali</h2>
+                </div>
+                <p class="artist-info">
+                    Toregali Toreali ( Kazakh Toregali Tureulyuly Alikhanov , real name - Alikhanov Turegali Turalievich; 
+                    born October 14, 1992 in Baikonur , Kazakhstan ) - Kazakh singer and songwriter; 
+                    was awarded the first National Television Music Prize "Zhyl tadauy". The song "Hello", performed together with Erke Esmakhan in 2015, brought fame to the performer. 
+                    The singer goes on tour in Kazakhstan and the territory of the CIS and other countries. The price of Toregali Toreali concerts is from 2-5 thousand tenge.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/4OinrbXgJxZY8V7FjTNCme?si=wmEgPO7tQZOgNPGYzvQXDg" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist8">
+        <div class="info">
+            <img onclick="closeInfo(8)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/qairat.jpg">
+                    <h2 class="col-md-7 artist-name">Qairat Nurtas</h2>
+                </div>
+                <p class="artist-info">
+                    Kairat Nurtas or Qairat Nurtas (Kazakh: Қайрат Нұртасұлы Айдарбеков, Qaırat Nurtasuly Aıdarbekov; born 25 February 1989, Turkestan) is a Kazakhstan singer. He has topped the rating of the most popular local Kazakh musicians, based on CD sales
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/0C6MmuSHJwY8cQILjaB0H6?si=OW8CsHW8RkaziVXhJYmaiw" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist9">
+        <div class="info">
+            <img onclick="closeInfo(9)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/bonapart.jpg">
+                    <h2 class="col-md-7 artist-name">Bonapart</h2>
+                </div>
+                <p class="artist-info">
+                    The story of the young singer Bonapart began just a year ago, 
+                    but he already has several cult compositions among young people behind him. 
+                    For example, this summer's explosive hit is "Almaty-Semey", 
+                    as well as compositions such as "Little", "I Love" and "Karimi". 
+                    Whichever city of Kazakhstan Bonapart arrives with a concert, 
+                    the audience will definitely know the words of these songs by heart. 
+                    A worthy result for a 19-year-old guy from Karaganda, 
+                    who a couple of years ago had no idea what his love for music would result in.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/6XlJ3b8DflSGBQmAOd38aj?si=xY30HVtcRA2sq_BqvTfBgA" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist10">
+        <div class="info">
+            <img onclick="closeInfo(10)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/bts.jpg">
+                    <h2 class="col-md-7 artist-name">BTS</h2>
+                </div>
+                <p class="artist-info">
+                    BTS, also known as the Bangtan Boys, is a seven-member South Korean boy band that began formation in 2010 and debuted in 2013 under Big Hit Entertainment.
+                    The septet—composed of RM, Jin, Suga, J-Hope, Jimin, V, and Jungkook—co-writes and co-produces much of their own output. 
+                    Originally a hip hop group, their musical style has evolved to include a wide range of genres. 
+                    Their lyrics, often focused on personal and social commentary, touch on the themes of mental health, troubles of school-age youth, loss, the journey towards loving oneself, and individualism.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX?si=OHgdIee0QXOmxBb8eqxLEQ" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist11">
+        <div class="info">
+            <img onclick="closeInfo(11)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/blackpink.jpg">
+                    <h2 class="col-md-7 artist-name">BLACKPINK</h2>
+                </div>
+                <p class="artist-info">
+                    Blackpink (Korean: 블랙핑크; commonly stylized as BLACKPINK or BLΛƆKPIИK) is a South Korean girl group formed by YG Entertainment, consisting of members Jisoo, Jennie, Rosé, and Lisa. 
+                    The group debuted in August 2016 with their single album Square One, which featured "Whistle" and "Boombayah", 
+                    their first number-one entries on South Korea's Gaon Digital Chart and the Billboard World Digital Song Sales chart, respectively.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/41MozSoPIsD1dJM0CLPjZF?si=1Gk2DeROS5eE-c9P-3rT5g" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist12">
+        <div class="info">
+            <img onclick="closeInfo(12)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/bigbang.jpg">
+                    <h2 class="col-md-7 artist-name">BIGBANG</h2>
+                </div>
+                <p class="artist-info">
+                    Big Bang (Korean: 빅뱅; stylized as BIGBANG) is a South Korean boy band formed by YG Entertainment. 
+                    The group consists of four members: G-Dragon, T.O.P, Taeyang, and Daesung; former member Seungri retired from the entertainment industry on March 11, 2019. 
+                    Dubbed the "Kings of K-pop", they helped spread the Korean Wave internationally and are one of the most influential acts in K-pop history. 
+                    They are known for their trendsetting musical experimentation, self-production, and stage presence.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/4Kxlr1PRlDKEB0ekOCyHgX?si=F9gSA0I1QOWPurAtGtYrvQ" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist13">
+        <div class="info">
+            <img onclick="closeInfo(13)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/psy.jpg">
+                    <h2 class="col-md-7 artist-name">PSY</h2>
+                </div>
+                <p class="artist-info">
+                    Park Jae-sang (Korean: 박재상; Hanja: 朴載相, IPA: [pɐk̚.t͡ɕεsɐŋ]; born December 31, 1977), known professionally as Psy (stylized in all caps as PSY) (싸이; /saɪ/ SY; Korean: [s͈ai]), is a South Korean singer, rapper, songwriter, and record producer. 
+                    Psy is known domestically for his humorous videos and stage performances, and internationally for his hit single "Gangnam Style". 
+                    The song's refrain was entered into The Yale Book of Quotations as one of the most famous quotations of 2012.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/2dd5mrQZvg6SmahdgVKDzh?si=6RAceQFnRh-1OxaXG0pnMw" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist14">
+        <div class="info">
+            <img onclick="closeInfo(14)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/mdee.jpg">
+                    <h2 class="col-md-7 artist-name">Mdee</h2>
+                </div>
+                <p class="artist-info">
+                    The path of 19-year-old Madi Toktarov began in 2014 with the recording of covers of hits of popular artists. 
+                    However, Madi did not sit for a long time in the ranks of musicians singing other people's compositions. 
+                    The very next year he released a joint track with Eddie Mack on the song "KHVLIFA", 
+                    while writing songs for other aspiring performers. In 2016, he meets his future girlfriend Dequine, 
+                    with whom he returns to recording video covers and takes the right step. 
+                    The title track "A lot of you" found a response in the hearts of many listeners.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/0uSp6Xc9lmxRDrDCTTtpq0?si=oOrqTMmyTeO3k1lT5SNlRw" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist15">
+        <div class="info">
+            <img onclick="closeInfo(15)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/limba.jpg">
+                    <h2 class="col-md-7 artist-name">Limba</h2>
+                </div>
+                <p class="artist-info">
+                    Mukhamed Akhmetzhanov can rightfully be considered the author of the main hit of this summer. 
+                    His now calling card - the song "Deceived" - sounded literally from every corner, 
+                    which instantly allowed The Limba to become one of the most talked about persons of this year. 
+                    Having decided to strike while the iron is hot, 
+                    in October of this year he released a full-length album entitled 
+                    "We are going home", which is gaining popularity very quickly, can be read by quotes, 
+                    and in addition to 600,000 plays on VK, has radio rotation. Unconditional success!
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/7LdZqOf4uMeA5vzlI0oza7?si=bzrRpXTJTGizsRR5X24OOQ" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist16">
+        <div class="info">
+            <img onclick="closeInfo(16)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/abdr.jpg">
+                    <h2 class="col-md-7 artist-name">abdr</h2>
+                </div>
+                <p class="artist-info">
+                    The songs under a very unusual pseudonym abdr are released by the talented Pavlodar guy Abdrakhman Bekenov. 
+                    His compositions are a symbiosis of memorable beats and extraordinary author's texts, 
+                    in which the performer sings the most beautiful feeling in the world - love. 
+                    To date, abdr has four classic neo-pop singles. The first of them, called "Special", 
+                    became the anthem of all Kazakhstani girls due to its powerful ideological component, 
+                    the essence of which was to express admiration for female beauty in all its manifestations and forms. 
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/0L1eKUNC9p5pxnDiehqoPM?si=L51y9DQXRju01DpjDBxHow" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist17">
+        <div class="info">
+            <img onclick="closeInfo(17)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/halsey.jpeg">
+                    <h2 class="col-md-7 artist-name">Halsey</h2>
+                </div>
+                <p class="artist-info">
+                    Ashley Nicollette Frangipani, Better known under the pseudonym Halsey (Eng. Halsey ) - American singer, songwriter and activist. 
+                    She began writing songs at the age of 17, in 2014 she signed a contract with the Astralwerks record company and released a five-track mini-album called Room 93. 
+                    Her debut studio album Badlands was released in 2015.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/26VFTg2z8YR0cCuwLzESi2?si=EzVpqLdaRs2zhEhKbBJsvA" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist18">
+        <div class="info">
+            <img onclick="closeInfo(18)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/khalid.jpg">
+                    <h2 class="col-md-7 artist-name">Khalid</h2>
+                </div>
+                <p class="artist-info">
+                    Khalid Donnel Robinson (born February 11, 1998) is an American singer and songwriter. 
+                    He is signed to Right Hand Music Group and RCA Records. 
+                    In March 2017, Khalid released his debut studio album, American Teen, 
+                    the album spawned the US top-20 singles, "Location" and “Young Dumb & Broke”, 
+                    and was later certified double platinum by the Recording Industry Association of America (RIAA).
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny?si=0nXITKD5RemJy1pS8Oymqg" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutItems" id="artist19">
+        <div class="info">
+            <img onclick="closeInfo(19)" class="close" src="images/close.png" >
+            <div class="content">
+                <div class="row">
+                    <img class="col-md-5" src="images/billie.jpg">
+                    <h2 class="col-md-7 artist-name">Billie Eilish</h2>
+                </div>
+                <p class="artist-info">
+                    Billie Eilish Pirate Baird O'Connell is an American singer-songwriter. 
+                    She first gained attention in 2015 when she uploaded the song "Ocean Eyes" to SoundCloud, 
+                    which was subsequently released by the Interscope Records subsidiary Darkroom. 
+                    The song was written and produced by her brother Finneas O'Connell, with whom she collaborates on music and live shows. 
+                    Her debut EP, Don't Smile at Me (2017), became a sleeper hit, reaching the top 15 in the US, UK, Canada, and Australia.
+                </p>
+                <a class="btn btn-default btn-sm"  href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH?si=hCAuExU6TliEXNTniwhDPw" target="_blank">Open in Spotify</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="layout-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="sdu"><b>Suleyman Demirel University</b></div>
+                <div class="lgo">
+                    <img src="images/ico.ico    " style="width: 47px;" alt="">
+                </div>
+                <div class="ftr"><b>&copy 2020 "TRIXBEAT"</b></div>
+            </div>
+        </div>
+    </footer>
+
+    <!--aos JS link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Page's JS link-->
+    <script src="artists.js"></script>   
+</body>
+</html>

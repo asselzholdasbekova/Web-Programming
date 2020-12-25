@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIXBEAT</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoo.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--aos CSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="playlists.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="page-layout"></div>
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/logo.png" alt="">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html">Artists</a></b></li>
+                <li><b><a href="videos.html">Videos</a></b></li>
+                <li><b><a href="playlists.html" id="playlists">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
+                <li><b><a href="contacts.html">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav style="margin-right: -31px;" >
+            <a href="https://vk.com/id321027378" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+            </a>
+            <a href="https://www.instagram.com/dinyanyaa" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+            </a>
+        </nav>
+
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    </div>
+
+    <div class="layout-content">
+        <div class="container content-container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="page-sidebar">
+                        <div class="sidebar-body">
+                            <nav class="sidebar-menu" id="parts">
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="200">
+                                    <a class="text" style="text-decoration: none;" href="playlists.html">Chill</a>
+                                    <a class="btn btn-default btn-sm" id="read-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-ktl">Chill-out (shortened as chill; also typeset as chillout or chill out) is a loosely defined form of popular music characterized by slow tempos and relaxed moods.</p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="400">
+                                    <a class="text" style="text-decoration: none;"id="topcharts" href="rap.html">RAP</a>
+                                    <a class="btn btn-default btn-sm" id="top-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-top">Rap music is a genre of popular music developed in the United States by inner-city African Americans and Latino Americans in the Bronx borough of New York City in the 1970s. </p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="600">
+                                    <a class="text" style="text-decoration: none;" href="pop.html">pop</a>
+                                    <a class="btn btn-default btn-sm" id="code-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-code">Pop is a genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom.</p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="800">
+                                    <a class="text" style="text-decoration: none;" href="joy.html">joy</a>
+                                    <a class="btn btn-default btn-sm" id="young-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-young">Joy music is a concept that encompasses various musical genres, intended mainly for entertainment purposes, often serving as a background for various activities, characterized by simple content and easily accessible to perception </p>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="page-content">
+                        <div class="content-body">
+                            <div class="music-items row">
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200" id="0">
+                                        <div class="album-cover">
+                                            <img src="https://i1.sndcdn.com/artworks-000424923411-je7gf7-t500x500.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Reel it in</div>
+                                            <div class="album-subtitle">Amine</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(0)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Aminé - REEL IT IN.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200" id="1">
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Future_-_Life_Is_Good.png" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Life Is Good</div>
+                                            <div class="album-subtitle">Future & Drake</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(1)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Future - Life Is Good  ft. Drake.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                              
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200" id="2">
+                                        <div class="album-cover">
+                                            <img src="https://i.pinimg.com/736x/d1/54/f5/d154f509d93d44537ada02cfb014c778.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">DIOR</div>
+                                            <div class="album-subtitle">Pop Smoke</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(2)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/POP SMOKE - DIOR.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="3">
+                                        <div class="album-cover">
+                                            <img src="https://myvotez.de/wp-content/uploads/2019/08/Metro-Boomin-feat.-Gunna-Space-Cadet.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Space cadet</div>
+                                            <div class="album-subtitle">Metro boomin</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(3)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Metro Boomin - Space Cadet ft. Gunna.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="4">
+                                        <div class="album-cover">
+                                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/pmn/OTHI7ACUE5GQVPM3KTMGK2XE3I.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Mood swing</div>
+                                            <div class="album-subtitle">pop smoke</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(4)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/POP SMOKE - MOOD SWINGS ft. Lil Tjay.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="5">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/c567238c3d5781eed61a93baff46f678.1000x1000x1.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Money Trees</div>
+                                            <div class="album-subtitle">Kendrick Lamar</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(5)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Kendrick Lamar - Money Trees.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="6">
+                                        <div class="album-cover">
+                                            <img src="https://i1.sndcdn.com/artworks-000228497845-8dliw9-t500x500.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">up like an insomniac</div>
+                                            <div class="album-subtitle">XXXTentacion</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(6)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/XXXTentacion.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="7">
+                                        <div class="album-cover">
+                                            <img src="https://m.media-amazon.com/images/I/71CUOsVZfbL._SS500_.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">unbothered</div>
+                                            <div class="album-subtitle">ski mask</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(7)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Ski Mask the Slump God - Unbothered.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="8">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/73d71d3d443842a630225a1350f2cca2.1000x1000x1.png" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">GATTI</div>
+                                            <div class="album-subtitle">JACKBOYS, Pop Smoke, Travis Scott</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(8)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/JACKBOYS, Pop Smoke, Travis Scott - GATTI.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="9">
+                                        <div class="album-cover">
+                                            <img src="https://m.media-amazon.com/images/I/61+2SS+j05L._SS500_.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Hello ft. A Boogie wit da Hoodie</div>
+                                            <div class="album-subtitle">Pop Smoke</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(9)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Pop Smoke - Hello  ft. A Boogie wit da Hoodie.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="10">
+                                        <div class="album-cover">
+                                            <img src="https://i.pinimg.com/originals/e6/f7/b3/e6f7b3fe254a388269a7e800173f0a49.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">For The Night ft. Lil Baby, DaBaby</div>
+                                            <div class="album-subtitle">Pop Smoke</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(10)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Pop Smoke - For The Night  ft. Lil Baby, DaBaby.mp3">
+                                            </audio> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="11" >
+                                        <div class="album-cover">
+                                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a3e08bd7-ecbd-4549-a5c3-da0c8ff61535/dc5oqs4-4fc5dcd1-2c36-4d8a-8535-4b52f8b776b0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYTNlMDhiZDctZWNiZC00NTQ5LWE1YzMtZGEwYzhmZjYxNTM1XC9kYzVvcXM0LTRmYzVkY2QxLTJjMzYtNGQ4YS04NTM1LTRiNTJmOGI3NzZiMC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.8TZg9uuXaBJQGjKfUNz6VveEYV4acRDdQIJBXIEmoCA" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">20 Min</div>
+                                            <div class="album-subtitle">Lil Uzi Vert</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(11)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Lil Uzi Vert - 20 Min.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="12">
+                                        <div class="album-cover">
+                                            <img src="https://images-na.ssl-images-amazon.com/images/I/81o74XH1hIL._SL1421_.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">HIGHEST IN THE ROOM</div>
+                                            <div class="album-subtitle">Travis Scott</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(12)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Travis Scott - HIGHEST IN THE ROOM.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="13">
+                                        <div class="album-cover">
+                                            <img src="https://m.media-amazon.com/images/I/810R+281MIL._SS500_.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Said sum</div>
+                                            <div class="album-subtitle">MoneyBAGG YO</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(13)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Moneybagg Yo – Said Sum Remix feat. City Girls, DaBaby.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="14">
+                                        <div class="album-cover">
+                                            <img src="https://i1.sndcdn.com/artworks-000412168350-pmlpxq-t500x500.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Fukk Sleep</div>
+                                            <div class="album-subtitle">A$AP Rocky</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(14)">>Play</a>
+                                            </div>
+                                            <audio class="music">
+                                                <source src="audio/A$AP Rocky - Fukk Sleep  ft. FKA twigs.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--aos JS link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="rap.js"></script>
+
+</body>    

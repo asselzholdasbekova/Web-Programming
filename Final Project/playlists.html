@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIXBEAT</title>
+    <link rel="shortcut icon" href="images/ico.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8EuU0cIkdvBHRKUQImoJ9CfR6BrXUJkouVbo6kmXgeiu2k3nVTYZJbqdZWT3y_D7bu6Tfn3TcwPVdFp4g_707zUj9L6jiIOUCXDGRKeORXI" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="playlists.css">
+
+    <!--aos CSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="page-layout"></div>
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/ico.ico">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html">Artists</a></b></li>
+                <li><b><a href="videos.html">Videos</a></b></li>
+                <li><b><a href="playlists.html" id="playlists">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
+                <li><b><a href="contacts.html">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav style="margin-right: -31px;" >
+            <a href="https://vk.com/dinyanyaa" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+            </a>
+            <a href="https://www.instagram.com/dinyanyaa/" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+            </a>
+        </nav>
+
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    </div>
+
+    <div class="layout-content">
+        <div class="container content-container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="page-sidebar">
+                        <div class="sidebar-body">
+                            <nav class="sidebar-menu" id="parts">
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="200">
+                                    <a class="text" id="topcharts" style="text-decoration: none;" href="playlists.html">Chill</a>
+                                    <a class="btn btn-default btn-sm" id="read-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-ktl">Chill-out (shortened as chill; also typeset as chillout or chill out) is a loosely defined form of popular music characterized by slow tempos and relaxed moods.</p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="400">
+                                    <a class="text" style="text-decoration: none;" href="rap.html">RAP</a>
+                                    <a class="btn btn-default btn-sm" id="top-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-top">Rap music is a genre of popular music developed in the United States by inner-city African Americans and Latino Americans in the Bronx borough of New York City in the 1970s. </p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="600">
+                                    <a class="text" style="text-decoration: none;" href="pop.html">pop</a>
+                                    <a class="btn btn-default btn-sm" id="code-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-code">Pop is a genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom.</p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="800">
+                                    <a class="text" style="text-decoration: none;" href="joy.html">joy</a>
+                                    <a class="btn btn-default btn-sm" id="young-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-young">Joy music is a concept that encompasses various musical genres, intended mainly for entertainment purposes, often serving as a background for various activities, characterized by simple content and easily accessible to perception </p>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="page-content">
+                        <div class="content-body">
+                            <div class="music-items row">
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200" id="0">
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/24kGoldn_-_Mood.png/220px-24kGoldn_-_Mood.png" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Mood</div>
+                                            <div class="album-subtitle">24kGoldn feat. Justin Bieber, J Balvin & iann dior</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(0)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/24kGoldn feat. Iann Dior - Mood.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="250" id="1">
+                                        <div class="album-cover">
+                                            <img src="https://i1.sndcdn.com/artworks-000587154830-m93mdn-t500x500.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">All Night</div>
+                                            <div class="album-subtitle">Mishlawi</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(1)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Mishlawi - All Night.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="300" id="2">
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Lewis_Capaldi_-_Someone_You_Loved.png" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name"> Someone You Loved</div>
+                                            <div class="album-subtitle">Dylan Matthew & Danny Olson </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(2)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Lewis Capaldi - Someone You Loved.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item"id="3" >
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/2/24/GnarlsBarkleyCrazyCover.JPG" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Crazy</div>
+                                            <div class="album-subtitle">Gnarls Barkley</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(3)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Gnarls Barkley - Crazy.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item"id="4">
+                                        <div class="album-cover">
+                                            <img src="https://i1.sndcdn.com/artworks-OXWOTj1LZGNVNSt7-ve7KaQ-t500x500.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Hurts So Good</div>
+                                            <div class="album-subtitle">Astrid S</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(4)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Astrid S - Hurts So Good.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item" id="5">
+                                        <div class="album-cover">
+                                            <img src="https://i.pinimg.com/originals/d1/64/24/d1642416d5f2978bf2cb5253158a269c.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Ride</div>
+                                            <div class="album-subtitle">Twenty One Pilots</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(5)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Twenty One Pilots - Ride.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item"id="6">
+                                        <div class="album-cover">
+                                            <img src="https://f4.bcbits.com/img/a2119552211_10.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Senorita</div>
+                                            <div class="album-subtitle">Shawn Mendes & Camila Cabello</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(6)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Shawn Mendes & Camila Cabello - Senorita.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item"id="7">
+                                        <div class="album-cover">
+                                            <img src="https://m.media-amazon.com/images/I/81uL-PWO0pL._SS500_.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Lose You To Love Me</div>
+                                            <div class="album-subtitle">Selena Gomez</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(7)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Selena Gomez - Lose You To Love Me.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item"id="8">
+                                        <div class="album-cover">
+                                            <img src="https://www.mtvpersian.net/main/uploads/covers/main1/Charlie%20Puth%20-%20We%20Dont%20Talk%20Anymore%20(ft%20Selena%20Gomez)%20.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Charlie Puth & Selena Gomez</div>
+                                            <div class="album-subtitle">We don't talk anymore</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(8)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Charlie Puth - We Don't Talk Anymore.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" >
+                                    <div class="album-item" id="9">
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/d/d0/Surf_Mesa_-_Ily_%28I_Love_You_Baby%29.png" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Ily</div>
+                                            <div class="album-subtitle">Surf Mesa</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(9)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Surf Mesa feat. Emilee - Ily.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item"id="10">
+                                        <div class="album-cover">
+                                            <img src="https://pbs.twimg.com/media/ElGWynwW0AAlL_R.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Arcando</div>
+                                            <div class="album-subtitle">Habits</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(10)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Tove Lo - Habits.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item" id="11">
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/5/57/Sunset_Lover_cover.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Sunset Lover</div>
+                                            <div class="album-subtitle">PETIT BISCUIT</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(11)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Petit Biscuit - Sunset Lover.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item" id="12">
+                                        <div class="album-cover">
+                                            <img src="https://i1.sndcdn.com/artworks-000040814493-eu3kr3-t500x500.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Counting Stars</div>
+                                            <div class="album-subtitle">One Republic</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(12)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/OneRepublic - Counting Stars.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="album-item" id="13">
+                                        <div class="album-cover">
+                                            <img src="https://i1.sndcdn.com/artworks-000614096182-nvwnq7-t500x500.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Lost In Japan</div>
+                                            <div class="album-subtitle">Shawn Mendes</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(13)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Shawn Mendes - Lost In Japan.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4"> 
+                                    <div class="album-item" id="14">
+                                        <div class="album-cover">
+                                            <img src="https://c-sf.smule.com/rs-s54/arr/8e/23/7dc307fd-1e6f-46a2-9be4-12485aa30d7b_1024.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Космос</div>
+                                            <div class="album-subtitle">Скриптонит feat. Charusha</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(14)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/skriptonit_-_kosmos-feat-charusha.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--aos JS link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="playlist.js"></script>
+
+</body>    

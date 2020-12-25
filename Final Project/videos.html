@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIXBEAT</title>
+    <link rel="shortcut icon" href="images/ico.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ixog_uL-qWcymPkEP6PhNKFaPT3KSJ_HjAQ0I-5_TXCDDorAJFyxSeDBeFetyldZYBmofwLe748MAClhfipu6A" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="videos.css">
+
+    <!--aos CSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/ico.ico">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html">Artists</a></b></li>
+                <li><b><a href="videos.html" id="videos">Videos</a></b></li>
+                <li><b><a href="playlists.html">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
+                <li><b><a href="contacts.html">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav style="margin-right: -31px;" >
+            <a href="https://vk.com/id321027378" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+            </a>
+            <a href="https://www.instagram.com/dinyanyaa" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+            </a>
+        </nav>
+
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <div class="layout-content">
+        <div class="container content-container" >
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="page-sidebar"data-aos="fade-right">
+                        
+                        <div class="sidebar-body">
+                            <nav class="sidebar-menu" id="parts">
+                                <a class="text" id="topcharts" href="videos.html" style="text-decoration: none;">Soundtracks</a>
+                                <a class="text" style="text-decoration: none;" href="kaz.html">KZ Top 10</a>
+                                <a class="text" style="text-decoration: none;" href="kpop.html">KPOP Top 10</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="page-content" style="display: block;" data-aos="fade-left">
+                        <div class="content-body">
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/seeyouagain.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">See You Again</span>
+                                            <span class="video-artist">Wiz Khalifa ft.Charlie Puth</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(0)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/bluebird.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Blue Bird</span>
+                                            <span class="video-artist">Ikiminogakari</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(1)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/everytime.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Everytime I See You</span>
+                                            <span class="video-artist">Chen & Punch</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(2)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/hunter.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">departure</span>
+                                            <span class="video-artist">Masotoshi Ono</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(3)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/demonslayer.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Gurenge</span>
+                                            <span class="video-artist">Lisa</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(4)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/istersen.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Istersen</span>
+                                            <span class="video-artist">Buray</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(5)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/speechless.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Speechless</span>
+                                            <span class="video-artist">Solar(cover)</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(6)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6" >
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/unravel.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Unravel</span>
+                                            <span class="video-artist">TK From Ling Tosite Sigure</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(7)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/monodisco.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Monodisco</span>
+                                            <span class="video-artist">Bella Ciao</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(8)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/thislove.JPG"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">This Love</span>
+                                            <span class="video-artist">Davichi</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(9)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/37Vh_etC18w"></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(0)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/oJwMiU3RJmA" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(1)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/fTc5tuEn6_U" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(2)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/3wQiyOmAUOA"></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(3)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/pmanD_s7G3U" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(4)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/b4FZ8og276c" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(5)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/1Miv3gW07c8"></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(6)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/QKXi08chD2E" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(7)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/7EdUlZvmdtU" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(8)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/XyzaMpAVm3s" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(9)"/>
+    </div>
+
+    <!--aos JS link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="videos.js"></script>
+</body>
+</html>
+               

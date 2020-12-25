@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIXBEAT</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/free-30-instagram-stories-icons62_122608.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--aos CSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="playlists.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="page-layout"></div>
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/logo.png" alt="">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html">Artists</a></b></li>
+                <li><b><a href="videos.html">Videos</a></b></li>
+                <li><b><a href="playlists.html" id="playlists">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
+                <li><b><a href="contacts.html">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav style="margin-right: -31px;" >
+            <nav style="margin-right: -31px;" >
+                <a href="https://vk.com/id321027378" style="text-decoration: none;" target="_blank">
+                    <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+                </a>
+                <a href="https://www.instagram.com/dinyanyaa" style="text-decoration: none;" target="_blank">
+                    <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+                </a>
+                <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                    <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+                </a>
+                <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                    <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+                </a>
+            </nav>
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    </div>
+
+    <div class="layout-content">
+        <div class="container content-container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="page-sidebar">
+                        <div class="sidebar-body">
+                            <nav class="sidebar-menu" id="parts">
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="200">
+                                    <a class="text"  style="text-decoration: none;" href="playlists.html">Chill</a>
+                                    <a class="btn btn-default btn-sm" id="read-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-ktl">Chill-out (shortened as chill; also typeset as chillout or chill out) is a loosely defined form of popular music characterized by slow tempos and relaxed moods.</p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="400">
+                                    <a class="text" style="text-decoration: none;" href="rap.html">RAP</a>
+                                    <a class="btn btn-default btn-sm" id="top-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-top">Rap music is a genre of popular music developed in the United States by inner-city African Americans and Latino Americans in the Bronx borough of New York City in the 1970s. </p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="600">
+                                    <a class="text" style="text-decoration: none;" href="pop.html">pop</a>
+                                    <a class="btn btn-default btn-sm" id="code-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-code">Pop is a genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom.</p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="800">
+                                    <a class="text" id="topcharts" style="text-decoration: none;" href="joy.html">joy</a>
+                                    <a class="btn btn-default btn-sm" id="young-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-young">Joy music is a concept that encompasses various musical genres, intended mainly for entertainment purposes, often serving as a background for various activities, characterized by simple content and easily accessible to perception </p>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="page-content">
+                        <div class="content-body">
+                            <div class="music-items row">
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200" id="0">
+                                        <div class="album-cover">
+                                            <img src="https://livemusical.kz/images/cover/raim-artur-ana.jpeg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Ana</div>
+                                            <div class="album-subtitle">Raim & Artur</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(0)">Play | Pause</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Raim & Artur - Ana.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200" id="1">
+                                        <div class="album-cover">
+                                            <img src="https://music-portal.netlify.app/images/beinen.PNG" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">BeineÑ</div>
+                                            <div class="album-subtitle">madeniyett</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(1)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/madeniyett-beinen-bejne_(muzzona.kz).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200" id="2">
+                                        <div class="album-cover">
+                                            <img src="https://musicprime.kz/_ld/54/5454.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">оп-оңай</div>
+                                            <div class="album-subtitle">Марат Думан</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(2)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Марат Думан - Оп-онай 2020-[muzmir.kz].mp3">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="3">
+                                        <div class="album-cover">
+                                            <img src="https://musicprime.kz/_ld/16/1665.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">sen magan kereksin </div>
+                                            <div class="album-subtitle">rustem zhugunussov</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(3)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Рустем Жугунуссов - Сен маган керексин (musicprime.kz).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="4">
+                                        <div class="album-cover">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbr0lSOoK5RXMtJZOJ9l5lAQN7HtyJEm28jA&usqp=CAU" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">All i need</div>
+                                            <div class="album-subtitle">Ninety One</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(4)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Ninety One - All i need.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="5">
+                                        <div class="album-cover">
+                                            <img src="https://livemusical.kz/images/cover/darkhan-juzz-quralai.jpeg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Quralai</div>
+                                            <div class="album-subtitle">Darkhan Juzz</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(5)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/darkhan-juzz-quralai_(kmuzon.com).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="6">
+                                        <div class="album-cover">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3_0ZL8dLVxcBC9plQTHlETRmD6irWUZa7Q&usqp=CAU" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Bulttar nege mundy</div>
+                                            <div class="album-subtitle">Zineken</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(6)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Zineken - Булттар неге мунды 2019-[muzmir.kz].mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="7">
+                                        <div class="album-cover">
+                                            <img src="https://music-portal.netlify.app/images/%D0%B0%D0%BB%D1%8B%D1%81%D1%82%D0%B0%D0%BC%D0%B0.PNG" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Алыстама менен</div>
+                                            <div class="album-subtitle">Қазыбек Құрайыш</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(7)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/kazybek-kurajysh-alystama-menen_(qmuz.kz).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="8">
+                                        <div class="album-cover">
+                                            <img src="https://livemusical.kz/images/cover/ag-yeskhat-zharkin-ainalaiyn-remake-qydyrali-qaraqat.jpeg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Ainalaiyn (Remake Qydyrali & Qaraqat)</div>
+                                            <div class="album-subtitle">AG & Yeskhat Zharkin</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(8)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/AG & Yeskhat Zharkin - Ainalaiyn (Remake Qydyrali & Qaraqat).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="9">
+                                        <div class="album-cover">
+                                            <img src="https://livemusical.kz/images/cover/sadraddin-aliya.jpeg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">АЛИЯ</div>
+                                            <div class="album-subtitle">sadraddin</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(9)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Садраддин – Алия.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="10">
+                                        <div class="album-cover">
+                                            <img src="https://music-portal.netlify.app/images/delacure.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Назар Аудармаймын</div>
+                                            <div class="album-subtitle">De Lacure</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(10)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/1578911760_de-lacure-nazar-audarmaymyn.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="11">
+                                        <div class="album-cover">
+                                            <img src="https://livemusical.kz/images/cover/keregindi-al-feat-taspay-jeti.jpeg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Keregindi Al</div>
+                                            <div class="album-subtitle">JETI feat. Taspay</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##"  onClick="playMusic(11)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Keregindi Al feat. Taspay - JETI.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="12">
+                                        <div class="album-cover">
+                                            <img src="https://music-portal.netlify.app/images/uade.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Uade Ber</div>
+                                            <div class="album-subtitle">Oskar</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(12)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/oskar-uade-ber_(qmuz.kz).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="13">
+                                        <div class="album-cover">
+                                            <img src="https://music-portal.netlify.app/images/%D1%83%D0%B0%D0%BA%D1%8B%D1%82.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Uaqyt</div>
+                                            <div class="album-subtitle">Mona Songz</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(13)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Mona Songz- уақыт.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" id="14">
+                                        <div class="album-cover">
+                                            <img src="https://livemusical.kz/images/cover/miras-zhugunusov-ndetem-n-2018.jpeg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Әндетемін</div>
+                                            <div class="album-subtitle">Мирас Жүгінісов</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(14)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Мирас Жугунусов - Әндетемін (2018).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--aos JS link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="joy.js"></script>
+
+</body>    

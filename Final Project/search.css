@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Noto+Sans+JP:wght@900&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    background-image: url(https://i.pinimg.com/564x/ca/fd/fc/cafdfc633848d8f4d956fc60cd77b569.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+header {
+    
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 22px 140px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    z-index: 2;
+    width: 100%;
+    
+}
+
+.h-menu {
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+ }
+ 
+ .h-menu span {
+    width: 80%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.4s ease-out;
+ }
+ 
+ .h-menu.open span:nth-child(2) {
+    background-color: #333;
+    display: none;
+ }
+ 
+ .h-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translateX(11px) translateY(7px);
+ }
+ 
+ .h-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translateX(2px) translateY(1px);
+ }
+
+#logo {
+    cursor: pointer;
+    width: 52px;
+    
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: 15px;
+
+    
+}
+
+.nav__links li a {
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.nav__links li a:hover {
+    color: #00889a;
+    
+}
+
+#playlists {
+    color: #00889a;
+}
+
+#social {
+    opacity: 0.7;
+}
+
+#social:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+#searchNav {
+    color: #00889a;
+}
+
+#block1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+#main{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main li{
+    width: 100%;
+    list-style: none;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#main a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+#myUl{
+    width: 100%;
+}
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background: 0 0;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 12px;
+}
+h2{
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
+.layout-footer {
+    padding: 100px 40px 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media(max-width:576px) {
+    header {
+        padding: 40px;
+     }
+ 
+    .h-menu {
+        display: block;
+    }
+
+    #social {
+        display: none;
+    }
+ 
+    .nav {
+        display: none;
+        position: fixed;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        height: 350px;
+        background-color: rgb(0, 0, 0,0.9);
+        opacity: 0.9;
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+
+    .nav__links {
+        padding-right: 37px;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+
+    .info {
+        
+        padding-top: 95px;
+        
+    }
+    
+    .info-content {
+        
+        width: 350px;
+        padding: 10px;
+    }
+    
+    .pilots-name {
+        font-size: 20px;
+    }
+    
+    .pilots-info { 
+        font-size: 13px;
+    }
+ 
+    .info-content-eminem {
+        padding: 10px;
+    }
+
+
+    .info6 {
+        
+        width: 100%;
+        height: 100%;
+        
+        padding-top: 108px;
+       
+    }
+    
+    .info-content {
+        background-color: rgb(0, 0, 0, 0.6);
+        color: white;
+        height: auto;
+        width: 400px;
+        padding: 12px;
+        border-radius: 20px;
+        position: relative;
+    }
+    
+    .pilots-name-imagine {
+        position: absolute;
+        margin-top: -80px;
+        margin-left: 125px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    
+    .pilots-info-imagine {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+    }   
+    
+   
+
+
+    
+    #word {
+        margin-left: 120px;
+    }
+
+    #word2 {
+        margin-left: 118px;
+    }
+
+    #word4 {
+        margin-left: 145px;
+    }
+
+    #word12 {
+        margin-left: 145px;
+    }
+
+
+    #wordsheeran {
+        margin-left: 143px;
+    }
+
+
+    .btn-default {
+        padding: 7px 15px;
+        font-size: 10px;
+    }
+}
+
+@keyframes fade {
+    from {
+       opacity: 0;
+    } to {   
+       opacity: 0.9;
+    }
+ }
+
+
+
+

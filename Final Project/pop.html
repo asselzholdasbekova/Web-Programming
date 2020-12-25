@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIXBEAT</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoo.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--aos CSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="playlists.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="page-layout"></div>
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/logo.png" alt="">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html">Artists</a></b></li>
+                <li><b><a href="videos.html">Videos</a></b></li>
+                <li><b><a href="playlists.html" id="playlists">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
+                <li><b><a href="contacts.html">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav style="margin-right: -31px;" >
+            <a href="https://vk.com/id321027378" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+            </a>
+            <a href="https://www.instagram.com/dinyanyaa" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+            </a>
+        </nav>
+
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    </div>
+
+    <div class="layout-content">
+        <div class="container content-container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="page-sidebar">
+                        <div class="sidebar-body">
+                            <nav class="sidebar-menu" id="parts">
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="200">
+                                    <a class="text" style="text-decoration: none;" href="playlists.html">Chill</a>
+                                    <a class="btn btn-default btn-sm" id="read-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-ktl">Chill-out (shortened as chill; also typeset as chillout or chill out) is a loosely defined form of popular music characterized by slow tempos and relaxed moods.</p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="400">
+                                    <a class="text" style="text-decoration: none;" href="rap.html">RAP</a>
+                                    <a class="btn btn-default btn-sm" id="top-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-top">Rap music is a genre of popular music developed in the United States by inner-city African Americans and Latino Americans in the Bronx borough of New York City in the 1970s. </p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="600">
+                                    <a class="text"id="topcharts" style="text-decoration: none;" href="pop.html">pop</a>
+                                    <a class="btn btn-default btn-sm" id="code-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-code">Pop is a genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom.</p>
+                                </div>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="800">
+                                    <a class="text" style="text-decoration: none;" href="joy.html">joy</a>
+                                    <a class="btn btn-default btn-sm" id="young-button" href="#">read more</a>
+                                </div>
+                                <div id="info-playlist">
+                                    <p id="text-young">Joy music is a concept that encompasses various musical genres, intended mainly for entertainment purposes, often serving as a background for various activities, characterized by simple content and easily accessible to perception </p>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="page-content">
+                        <div class="content-body">
+                            <div class="music-items row">
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200"id="0">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/5fcd6a3fa11375296cb3ed04f44c109c.1000x1000x1.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">pov</div>
+                                            <div class="album-subtitle">ariana grande</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(0)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Ariana Grande - pov.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200"id="1">
+                                        <div class="album-cover">
+                                            <img src="https://lastfm.freetls.fastly.net/i/u/770x0/5603662d432bd3f160230039c6cee27e.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Therefore i am</div>
+                                            <div class="album-subtitle">billie eilish</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(1)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Billie Eilish - Therefore I Am (Official Music Video).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200"id="2">
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/3/39/Never_Be_Like_You_%28featuring_Kai%29_%28Official_Single_Cover%29_by_Flume.png" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Flume</div>
+                                            <div class="album-subtitle"> Never Be Like You feat. Kai</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(2)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Flume - Never Be Like You feat. Kai.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="3">
+                                        <div class="album-cover">
+                                            <img src="https://i.kfs.io/album/global/55161732,0v1/fit/500x500.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Clairo </div>
+                                            <div class="album-subtitle">Sofia</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(3)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Clairo - Sofia.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="4">
+                                        <div class="album-cover">
+                                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/0e/f0/af/0ef0af71-9169-895b-406d-22460d302612/source/450x450bb.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">you broke me first</div>
+                                            <div class="album-subtitle">Tate McRae</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(4)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Tate McRae - you broke me first.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="5">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/5fcd6a3fa11375296cb3ed04f44c109c.1000x1000x1.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">positions</div>
+                                            <div class="album-subtitle">Ariana Grande</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(5)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Ariana Grande - positions.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="6">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/2a4c4b48762d3237f65df17e3ab35a89.1000x1000x1.png" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">No Idea</div>
+                                            <div class="album-subtitle">Don Toliver</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(6)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Don Toliver - No Idea.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="7">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/807d1745190072b79f85fcdbe0a51d34.1000x1000x1.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Deep End</div>
+                                            <div class="album-subtitle">Fousheé</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(7)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Fousheé - Deep End.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="8">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/4eb268023fb6e778df8e17cbb980987e.762x762x1.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Love Songs</div>
+                                            <div class="album-subtitle">Kaash Paige</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(8)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Kaash Paige - Love Songs.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="9">
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Internet_Money_-_Lemonade.png" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name"> Lemonade</div>
+                                            <div class="album-subtitle">Internet Money </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(9)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Internet Money - Lemonade ft. Don Toliver, Gunna .mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="10">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/47f17937b3ddb16840889d597bddfe3f.1000x1000x1.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Still Don’t Know My Name</div>
+                                            <div class="album-subtitle">Labrinth</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(10)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Labrinth - Still Don’t Know My Name  _ euphoria.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="11">
+                                        <div class="album-cover">
+                                            <img src="https://images.genius.com/97de504e88ae412160bc49de186189ee.1000x1000x1.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Fantasy</div>
+                                            <div class="album-subtitle">Bazzi </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(11)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Bazzi - Fantasy.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="12">
+                                        <div class="album-cover">
+                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71KuLDCUy1L._AC_UL600_SR600,600_.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Surrender</div>
+                                            <div class="album-subtitle">Natalie Taylor</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(12)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Surrender- Natalie Taylor.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="13">
+                                        <div class="album-cover">
+                                            <img src="https://img.discogs.com/xyEydvzxwdrQzo6QO_zfIoOchuE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-13897064-1563562684-4407.jpeg.jpg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name">Arcade</div>
+                                            <div class="album-subtitle">Duncan Laurence </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(13)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Arcade - Duncan Laurence {LYRICS} _!WINNER ESC 2019!_.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-6">
+                                    <div class="album-item"id="14">
+                                        <div class="album-cover">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Salem_Ilese_-_Mad_at_Disney.jpeg" alt="">
+                                        </div>
+                                        <div class="album-details">
+                                            <div class="album-name"> mad at disney</div>
+                                            <div class="album-subtitle">salem ilese</div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(14)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/salem ilese – mad at disney.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--aos JS link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="pop.js"></script>
+
+</body>    

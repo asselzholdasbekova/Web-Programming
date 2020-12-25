@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>TRIXBEAT</title>
+            <link rel="shortcut icon" href="images/ico.ico">
+
+            <!--Bootstrap CDN links-->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=bps9S6QWFPZW-A2ErAZRovkETrEEZHpUHxVZ2qjypXxLLBuoBgfb3rvLMp9sT51mO4WUtsVhUOSxVY0SBymNJg" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+            <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+
+            <!--aos CSS link-->
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+            <!--Style-->
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body id="forhref">
+
+            <header>
+                <a href="index.html">
+                    <img class="header-logo logo-rotate" id="logo" src="images/ico.ico">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__links">
+                        <li><b><a href="index.html" id="main">Main</a></b></li>
+                        <li><b><a href="artists.html">Artists</a></b></li>
+                        <li><b><a href="videos.html">Videos</a></b></li>
+                        <li><b><a href="playlists.html">Playlists</a></b></li>
+                        <li><b><a href="search.html">Search</a></b></li>
+                        <li><b><a href="contacts.html">Contacts</a></b></li>
+                    </ul>
+                </nav>
+                <nav style="margin-right: -31px;" id="dpNone" >
+                    <a href="https://vk.com/dinyanyaa" style="text-decoration: none;" target="_blank">
+                        <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+                    </a>
+                    <a href="https://www.instagram.com/dinyanyaa/" style="text-decoration: none;" target="_blank">
+                        <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+                    </a>
+                    <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                        <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+                    </a>
+                    <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                        <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+                    </a>
+                </nav>
+        
+                <div class="h-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        
+            </header>
+        
+
+            <div class="full-screen-video-container">
+                <video id="videoBG" poster="images/poster.png" autoplay muted loop  >
+                    <source src="background_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="full-screen-video-content">
+                <h1 id="glow">Listen with soul</h1>
+            </div>
+
+            
+            <div class="landing-screen">
+                <div class="container">
+                    <section class="news-section">
+
+                        <div data-aos="zoom-in-up"  id="hottext"><h2>Hot Releases</h2></div>
+
+                        <div class="row news-container">
+
+                            <div class="col-md-8" data-aos="zoom-in-up" id="0">
+
+                                <div class="news-item" style="background-image: url(images/ik2.JPG)">
+                                    <div class="news-item-content">
+                                        
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Premiere of the album Ирина Кайратовна</b>
+                                                <p>13 Выпуск</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(0)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Ирина Кайратовна - Интро.mp3">
+                                            </audio>
+                                        </div>
+
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4" data-aos="zoom-in-up"id="1">
+                                <div class="news-item" style="background-image: url(images/2.png)">
+        
+                                    <div class="news-item-content">
+                                        
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>New single Roddy rich </b>
+                                                <p>The box</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(1)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/roddy-ricch-the-box.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row news-container">
+
+                            <div class="col-md-4" data-aos="zoom-in-up"id="2">
+                                <div class="news-item"style="background-image: url(images/3.png);">
+        
+                                    <div class="news-item-content">
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>The Weekend</b>
+                                                <p>Blinding lights</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(2)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/the-weeknd-blinding-lights.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4" data-aos="zoom-in-up"id="3">
+                                <div class="news-item" style="background-image: url(images/4.png);">
+        
+                                    <div class="news-item-content">
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Tones and I</b>
+                                                <p>Dance monkey</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(3)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/tones-and-i-dance-monkey(mp3name.net).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4" data-aos="zoom-in-up"id="4"> 
+                                <div class="news-item" style="background-image: url(images/5.png);">
+        
+                                    <div class="news-item-content">
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Billie Eilish</b>
+                                                <p>Everything I Wanted</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(4)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Billie Eilish - Everything i wanted.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                        </div>
+        
+                        <div class="row news-container">
+
+                            <div class="col-md-4" data-aos="zoom-in-up"id="5">
+                                <div class="news-item" style="background-image: url(images/6.png);">
+        
+                                    <div class="news-item-content">
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Dua Lipa</b>
+                                                <p>Do not start now</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(5)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Dua Lipa - Dont Start Now.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-md-8" data-aos="zoom-in-up"id="6">
+                                <div class="news-item" style="background-image: url(images/7.png) ">
+        
+                                    <div class="news-item-content">
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Lil baby album premiere</b>
+                                                <p>Woah</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(6)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/lil-baby-whoa(mp3name.net).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                        </div>
+        
+                        <div class="row news-container">
+
+                            <div class="col-md-4" data-aos="zoom-in-up"id="7">
+                                <div class="news-item" style="background-image: url(images/8.png); background-position: bottom;">
+        
+                                    <div class="news-item-content">
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Post Malone</b>
+                                                <p>Circles</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(7)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Post Malone - Circles.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4" data-aos="zoom-in-up"id="8">
+                                <div class="news-item" style="background-image: url(images/9.png); background-position: top;">
+        
+                                    <div class="news-item-content">
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Dababy</b>
+                                                <p>Rockstar</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(8)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/1587653755_dababy-feat_-roddy-ricch-rockstar.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4" data-aos="zoom-in-up"id="9">
+                                <div class="news-item" style="background-image: url(images/future.jpg); background-position: top;">
+        
+                                    <div class="news-item-content">
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Future</b>
+                                                <p>Life Is Good (feat. Drake)</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(9)">Play</a>
+                                            </div>
+                                            <audio class="music" controls>
+                                                <source src="audio/Future, Drake - Life Is Good.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                </div>
+                
+            
+
+        
+                <footer class="layout-footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 d-none d-md-block">
+                                <nav class="footer-menu font-weight-bold mb-5">
+                                    <a href="https://vk.com/id321027378" style="text-decoration: none; padding-right: 15px;" target="_blank">
+                                        <img id="social" src="images/vk.png" style="width: 25px;" alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/dinyanyaa" style="text-decoration: none; padding-right: 15px;" target="_blank">
+                                        <img id="social" src="images/insta.png" style="width: 25px;" alt="">
+                                    </a>
+                                    <a href="https://twitter.com/login" style="text-decoration: none; padding-right: 15px;" target="_blank">
+                                        <img id="social" src="images/twitter.png" style="width: 25px;" alt="">
+                                    </a>
+                                    <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                                        <img id="social" src="images/youtube.png" style="width: 25px;" alt="">
+                                    </a>
+        
+                                </nav>
+                            </div>
+                            <div class="col-md-4 text-center" id="footer-img">
+                                <img src="images/ico.ico" style="width: 47px;" alt="">
+                            </div>
+                            <a class="col-md-4 text-right font-weight-bold copyright" id="footer-text" href="#forhref">© 2020  "TRIXBEAT"</a>
+                        </div>
+                    </div>
+                </footer>
+        
+            </div> 
+        
+        
+        <!--aos JS link-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!--Javascript-->
+        <script src="script.js"></script>
+        
+        </body>
+        </html>
+        

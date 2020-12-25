@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Slab:ital,wght@0,100;1,700&display=swap');       
+
+
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.pinimg.com/564x/ca/fd/fc/cafdfc633848d8f4d956fc60cd77b569.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    min-width: 1200px;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    text-align: center;
+}
+
+.nav li, a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav li, a {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 22px 140px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    z-index: 2;
+    width: 100%;
+    
+}
+
+.h-menu {
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+ }
+ 
+ .h-menu span {
+    width: 80%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.4s ease-out;
+ }
+ 
+ .h-menu.open span:nth-child(2) {
+    background-color: #333;
+    display: none;
+ }
+ 
+ .h-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translateX(11px) translateY(7px);
+ }
+ 
+ .h-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translateX(2px) translateY(1px);
+ }
+
+#logo {
+    cursor: pointer;
+    width: 52px;
+    
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: 15px;
+    
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.nav__links li a:hover {
+    color: #00889a;
+    
+}
+
+
+#social {
+    opacity: 0.7;
+}
+
+#social:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+#main {
+    color: rgba(0, 136, 169, 1);
+}
+video{
+    max-width: 100%;
+}
+.landing-page{
+    width: 100%;
+}
+
+#hottext {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+#hottext .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.news-item {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    color: #fff;
+    -webkit-box-shadow: inset 122px -180px 148px -86px rgba(0,0,0,0.81);
+    -moz-box-shadow: inset 122px -180px 148px -86px rgba(0,0,0,0.81);
+    box-shadow: inset 122px -180px 148px -86px rgba(0,0,0,0.81);
+    transition: all 0.4s ease-out;
+}
+    
+.news-item:hover {
+    box-shadow: none;
+    opacity: 1;
+}
+
+.news-item-body {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 5%;
+    text-transform: uppercase;
+}
+
+.news-item-title {
+    font-family: 'Montserrat' ;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+.news-item-footer {
+    margin-top: 1vh;
+}
+
+.btn-sm {
+    padding: 7px 20px;    
+}
+
+.btn-default {
+    color: white;
+    background: 0 0;
+    border: 1px solid white;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+.btn {
+    transition: 0.6s
+    
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.music {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 1;
+
+}
+.text-center {
+    text-align: center;
+}
+.layout-footer {
+    padding: 100px 50px 40px 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-md-block {
+    display: block;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.layout-footer .copyright {
+    color: #fff;
+}
+
+#social {
+    opacity: 0.7;
+}
+
+#social:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+.full-screen-video-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-family: 'Josefin Slab', serif;           
+    color: #f1f1f1; 
+    width: 100%;
+    height: 100vh;
+  }
+
+  #glow {
+    font-size: 70px; 
+    font-weight:bold ;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+#dpNone{
+    opacity: 0;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #2b43af, 0 0 20px #fff, 0 0 30px #2b43af, 0 0 40px  #2b43af, 0 0 50px  #2b43af, 0 0 60px #2b43af, 0 0 70px  #2b43af;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #2b43af, 0 0 30px  #2b43af, 0 0 40px  #2b43af, 0 0 50px #2b43af, 0 0 60px  #2b43af, 0 0 70px #2b43af, 0 0 80px  #2b43af;
+    }
+  }
+
+
+@media(max-width:576px) {
+    header {
+        padding: 40px;
+     }
+ 
+     .h-menu {
+         display: block;
+     }
+ 
+     #social {
+         display: none;
+     }
+ 
+    .nav {
+        display: none;
+        position: fixed;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        height: 350px;
+        background-color: rgb(0, 0, 0,0.9);
+        opacity: 0.9;
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+
+    .nav__links {
+        padding-right: 37px;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    footer .row {
+      display: flex;
+      position: relative;
+      top: -40px;
+    }
+
+    #footer-img {
+       position: absolute;
+       left: 0;
+       width: 100px;
+       bottom: -35px;
+    }
+
+    #footer-text {
+      position: absolute;
+      right: 20px;
+    }
+    .landing-screen{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .news-section{
+        width: 100%;
+    }
+
+
+}
+
+
+@keyframes fade {
+   from {
+      opacity: 0;
+   } to {   
+      opacity: 0.9;
+   }
+}
+
+.full-screen-video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.full-screen-video-container video {
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (min-aspect-ratio: 16/9) {
+    .full-screen-video-container video {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .full-screen-video-container { 
+        width: auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    body {
+    background-image: url(https://i.pinimg.com/564x/ca/fd/fc/cafdfc633848d8f4d956fc60cd77b569.jpg);
+    background-size: cover;
+    }
+}
+.full-screen-video-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-family: 'Josefin Slab', serif;
+    font-size: 68px;   
+    font-weight:bold;           
+    color: #f1f1f1; 
+    width: 100%;
+    height: 100%;
+    padding: 300px;
+  }

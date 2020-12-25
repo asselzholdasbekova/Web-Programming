@@ -1,0 +1,26 @@
+img{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bgBlock{
+    width: 70%;
+    height: auto;
+    background-color: green;
+    box-sizing: border-box;
+}
+.row{
+    padding: 30px;
+}
+.col-md-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
